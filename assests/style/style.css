@@ -1,0 +1,367 @@
+:root{
+
+   /* Color */
+  --primary_color: #ffff;
+  --secondary_color: #010101;
+  --footer_color: #B3AEAE;
+  --green_color: #54654F;
+  --border: #707070;
+
+  /* font-family  */
+
+  --primary_font: 'Playfair Display', serif;
+
+  /* font-size (50px,24px, 18px, 12px) */
+  --h1_font: 3.125rem;
+  --h2_font: 1.5rem;
+  --h3_font: 1.313rem;
+  --h4_font: 1.125rem;
+  --footer_font: 0.75rem;
+
+  /* Margense */
+  --header_height: 6.25rem;
+
+}
+
+@font-face {
+    font-family: 'dream_orphansregular';
+    src: url('dream_orphans-webfont.woff2') format('woff2'),
+         url('dream_orphans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: auto;
+}
+body{
+  font-family: var(--primary_font);
+  background: var(--secondary_color);
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+	margin:0;
+	padding:0;
+}
+
+img,fieldset {
+	border:none;
+}
+
+/* Menu Section  */
+.navbar_container{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 36px;
+  padding: 0 4.438rem;
+  opacity: 1;
+}
+.navbar_container ul{
+  display: flex;
+  margin: 0;
+}
+.navbar_container ul li{
+  margin-right: 42px;
+}
+.navbar_container ul li a {
+  color: var(--primary_color);
+  font-size: var(--h3_font);
+  text-transform: uppercase;
+  font-family: 'dream_orphansregular';
+  letter-spacing: 1px;
+  position: relative;
+}
+.navbar_container ul li a:hover::before{
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: var(--primary_color);
+  position: absolute;
+  margin-top: 24px;
+
+}
+.navbar_container .logo img{
+  height: 250px;
+}
+.mobile_header{
+  display: none;
+}
+/* ===== CAROUSEL CONTAINER ======= */
+.carousel_container{
+
+}
+.image_container{
+  width: 100%;
+  margin: 0;
+  /* position: relative; */
+  z-index: -10;
+}
+.image_container .mySlides img{
+  width: 100%;
+  height: 100vh;
+}
+.image_container .mySlides .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ======= ABOUT CONTAINER ======== */
+.about_container{
+margin-top: -5px;
+width: 100%;
+background: var(--green_color);
+height: 20.99rem;
+position: relative;
+z-index: -10;
+color: var(--primary_color);
+font-size: var(--h3_font);
+font-family: var(--primary_font);
+
+
+
+}
+.about_container .about_section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 11rem;
+  position: absolute;
+  margin-top: 2rem;
+}
+.about_container .about_section .about_title{
+  display: flex;
+  flex-direction: column;
+
+}
+.about_container .about_section .about_heading{
+  line-height: 44px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 41px;
+  color: var(--primary_color);
+  font-weight: lighter;
+}
+.about_container .about_section .about_heading span{
+  letter-spacing: 0px;
+}
+.about_container .about_section .about_heading .read_more{
+  margin: -10px;
+}
+.greenplate{
+  width: 100%;
+  background: red;
+  height: 5.6rem;
+  margin-top: -10px;
+  position: absolute;
+  z-index: -1;
+}
+/* ========= INSTAGRAM FEED SECTION ============ */
+.igfeed_container{
+  display: none;
+}
+/* ========== FOOTER CONTAINER ======== */
+.footer_container{
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  height: 4.5rem;
+  width: 100%;
+  background: var(--footer_color);
+  border: 1px solid var(--border);
+}
+.footer_container p{
+    font-family: 'dream_orphansregular';
+    font-size: var(--footer_font);
+    margin-left: 4.5rem;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-device-width: 1400px) {
+
+  .about_container{
+    height: 24.5rem;
+  }
+  .about_container .about_section{
+    margin-top: 50px;
+    font-size: 28px;
+  }
+}
+@media screen and (max-device-width: 1200px) {
+  .about_container{
+    height: 24.5rem;
+  }
+  .about_container .about_section{
+    margin-top: 60px;
+
+  }
+}
+/* ===== MOBILE VIEW ========= */
+@media screen and (max-width: 768px) {
+   body{
+     background: var(--primary_color);
+     overflow-x: hidden;
+   }
+   header{
+     height: 100px;
+     background-color: var(--primary_color);
+     width: 100%;
+     position: relative;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+   }
+   .navbar_item{
+     display: none;
+   }
+   .navbar_container .mobile_header .mobilelogo img{
+     position: absolute;
+     display: block;
+     top: -14px;
+     left: 20px;
+     height: 159px;
+     width: 90px;
+   }
+   .mobilelogo{
+     display: block;
+   }
+   .logo{
+     display: none;
+   }
+   .mobile_header{
+     display: flex;
+     align-self: center;
+     justify-content: center;
+     height: 100vh;
+     background: #fff;
+
+   }
+   .mobile_header .toggle{
+     height: 3px;
+     width: 36px;
+     position: absolute;
+     top: 15px;
+     right: 25px;
+     background: var(--border);
+
+   }
+  .mobile_header .toggle::after{
+    content: '';
+    height: 3px;
+    width: 36px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    background: var(--border);
+
+  }
+  .mobile_header .toggle::before{
+    content: '';
+    height: 3px;
+    width: 36px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    background: var(--border);
+
+  }
+   main{
+     /* display: none; */
+   }
+
+   /* ======== CARSOUSEL CONTAINER ========= */
+   .carousel_container{
+    margin-top: 180px;
+     display: block;
+    width: 100%;
+   }
+   .carousel_container .image_container .mySlides img{
+    /* width: auto; */
+    width: 500px;
+    height: 100vh;
+   }
+
+
+   /* ====== ABOUT SECTON ===== */
+  .about_container{
+    /* display: block; */
+    display: flex;
+    /* align-items:center; */
+    justify-content: center;
+    background: var(--primary_color);
+    color: #000;
+    /* margin-top: 50px; */
+    /* margin: 0; */
+    font-size: 21px;
+    margin: 50px 20px 0px 70px;
+    /* height: 300px; */
+    /* font-weight: 700; */
+  }
+  .about_container .about_section{
+    margin: 0;
+
+  }
+  .about_container .about_section .about_heading{
+    color: #000;
+  }
+  .about_container .about_section .about_heading .read_more{
+    margin-left:  350px;
+    margin-top: 5px;
+  }
+
+
+  /* ========== INSTAGRAM FEED CONTAINER =========== */
+ .igfeed_container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   width: 500px;
+   margin-bottom: 50px;
+ }
+.footer_container{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_container p{
+  margin: 0;
+
+}
+
+}
