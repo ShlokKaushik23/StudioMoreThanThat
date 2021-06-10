@@ -310,7 +310,7 @@ font-family: var(--primary_font);
    }
    .carousel_container .image_container .mySlides img{
     /* width: auto; */
-    width: 500px;
+    width: auto;
     height: 100vh;
    }
 
