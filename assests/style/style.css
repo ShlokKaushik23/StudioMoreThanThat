@@ -79,6 +79,9 @@ table,tr,td,th,p,img {
 img,fieldset {
 	border:none;
 }
+header{
+  position: fixed;!important
+}
 
 /* Menu Section  */
 .navbar_container{
@@ -290,7 +293,6 @@ font-family: var(--primary_font);
      padding: 0;
    }
    header{
-     position: fixed;
      top: 0;
      left: 0;
      height: 131.5px;
@@ -299,7 +301,7 @@ font-family: var(--primary_font);
      z-index: 99;
 
    }
-   .main{
+   main{
     display: relative;
     width: 100%;
     z-index: -1;
