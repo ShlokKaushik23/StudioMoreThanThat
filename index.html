@@ -26,7 +26,7 @@
 <body>
   <header class="header">
     <nav class="navbar_container" id="navbar_container">
-      <div class="nav_section"id="nav_section">
+      <div class="nav_section" id="nav_section">
 
       <ul class="navbar_items" id="navbar_items">
         <li class="navbar_item instagram"><a href="https://www.instagram.com/studio.morethanthat/">
@@ -68,14 +68,17 @@
       </ul>
 
 
-      </div>
     </div>
 
 
       <div class="logo"><img src="assests\img\1.png" alt=""></div>
       <div class="mobile_header">
         <div class="mobilelogo"><img src="https://i.ibb.co/c2j0SKY/black-logo-1.png" border="0"></div>
+
+        <div class="js-menu menu" type="button">
         <div class="toggle" id="toggle"></div>
+        </div>
+        <!-- <div class="toggle" id="toggle"><i class="fas fa-times"></i></div> -->
       </div>
 
     </nav>
@@ -96,9 +99,6 @@
          <div class="mySlides_mobile fade"><img src="assests\img\mobileimg\home page image 1.png" alt=""></div>
          <div class="mySlides_mobile fade"><img src="assests\img\mobileimg\home page image 2.png" alt=""></div>
          <div class="mySlides_mobile fade"><img src="assests\img\mobileimg\home page image 3.png" alt=""></div>
-
-
-
        </div>
      </section>
 
@@ -127,13 +127,19 @@
 
      <section class="igfeed_container">
 
-       <div class="igfeed_secton">
+       <div class="igfeed_section">
 
-         <a href="https://www.instagram.com/studio.morethanthat/">
-           <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-           <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
-           </path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+         <div class="view_feed">
+           <a href="https://www.instagram.com/studio.morethanthat/">
+             <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+             </path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+
+             <p>View on Feed</p>
+
+         </div>
+
            <img src="assests\img\Insta feed.png" alt="">
 
        </div>
@@ -170,16 +176,37 @@
 
 // ===== NAV CONTAINER =========
 
+var isActive = false;
+
+$('.js-menu').on('click', function() {
+	if (isActive) {
+		$(this).removeClass('active');
+    $('body').removeClass('dark');
+
+		$('body').removeClass('menu-open');
+	} else {
+    $(this).addClass('active');
+		$('body').addClass('dark');
+
+		$('body').addClass('menu-open');
+	}
+
+	isActive = !isActive;
+});
+
 var toggleButton = document.getElementById('toggle');
 
 toggleButton.addEventListener("click", myFunction );
 
 function myFunction(){
   document.getElementById('nav_section').style.display = "block";
-  document.getElementById('toggle').classList.add("active");
 
+}
 
+toggleButton.addEventListener("dblclick", myRemove);
 
+function myRemove() {
+  document.getElementById('nav_section').style.display = "none";
 }
 
 // Change Image on Scroll
@@ -187,7 +214,7 @@ function myFunction(){
 $(document).ready(function() {
   $(window).on("scroll", function() {
     console.log($(this).scrollTop())
-    if($(this).scrollTop() >= 780){
+    if($(this).scrollTop() >= 980){
       // set to new image
       $(".mobilelogo img").attr("src","https://i.ibb.co/vxXszZZ/small-black-logo-1.png");
     } else {
