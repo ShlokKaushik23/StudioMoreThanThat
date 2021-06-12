@@ -289,16 +289,15 @@ font-family: var(--primary_font);
      margin: 0;
      padding: 0;
    }
-   header{
+   .header{
      position: fixed;
-     display: inline-block;
+     top: 0;
+     left: 0;
      height: 131.5px;
      background-color: var(--primary_color);
      width: 100%;
      z-index: 99;
-     top: 0px;
-     left: 0px;
-     right: 0;
+
    }
 
   .navbar_container .nav_section  {
@@ -313,7 +312,7 @@ transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
     background: var(--green_color);
     z-index: -1;
     color: var(--primary_color);
-    
+
   }
    .navbar_container .nav_section .navbar_items {
      height: 145vh;
