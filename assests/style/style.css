@@ -299,6 +299,19 @@ font-family: var(--primary_font);
      top: 0;
      left: 0;
      right: 0;
+     z-index: -1;
+
+   }
+   header{
+     position: fixed; !important
+     height: 131.5px;
+     background-color: var(--primary_color);
+     width: 100%;
+     z-index: 100;
+     top: 0;
+     left: 0;
+     right: 0;
+
    }
 
   .navbar_container .nav_section  {
