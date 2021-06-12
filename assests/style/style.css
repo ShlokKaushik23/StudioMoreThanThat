@@ -289,9 +289,9 @@ font-family: var(--primary_font);
      margin: 0;
      padding: 0;
    }
-   header{
+   .header{
      position: fixed;
-     display: inline-block;
+     display: block;
      height: 131.5px;
      background-color: var(--primary_color);
      width: 100%;
