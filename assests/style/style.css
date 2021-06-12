@@ -291,13 +291,15 @@ font-family: var(--primary_font);
 	   
    }
    header{
-     position: fixed;
+     position: fixed; !important
      height: 131.5px;
      background-color: var(--primary_color);
      width: 100%;
      z-index: 100;
      top: 0;
      left: 0;
+     right: 0;	   
+	   
    }
   .nav_section{
   }
