@@ -286,15 +286,14 @@ font-family: var(--primary_font);
    body{
      background: var(--primary_color);
      overflow-x: hidden;
+	   
    }
    header{
-     position: relative;
+     position: fixed;
      height: 131.5px;
      background-color: var(--primary_color);
      width: 100%;
-     position: relative;
     z-index: 10;
-    position: fixed;
     top: 0;
     left: 0;
    }
