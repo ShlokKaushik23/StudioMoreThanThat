@@ -287,6 +287,8 @@ font-family: var(--primary_font);
      background: var(--primary_color);
      overflow-x: hidden;
      width: 100%;
+     z-index: -1;
+	   
    }
    header{
      position: fixed;
