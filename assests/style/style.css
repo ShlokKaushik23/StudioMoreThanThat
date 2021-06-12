@@ -134,6 +134,9 @@ header{
 .mobile_social_media{
   display:none;
 }
+.whitepart{
+  display: none;
+}
 
 /* ===== CAROUSEL CONTAINER ======= */
 
@@ -296,7 +299,6 @@ font-family: var(--primary_font);
      position: fixed;
      top: 0;
      left: 0;
-     height: 131.5px;
      background-color: var(--primary_color);
      width: 100%;
      z-index: 99;
@@ -305,6 +307,17 @@ font-family: var(--primary_font);
    main{
     display: relative;
     width: 100%;
+    z-index: -1;
+  }
+
+  .whitepart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    background: var(--primary_color);
+    height: 131.5px;
     z-index: -1;
   }
 
