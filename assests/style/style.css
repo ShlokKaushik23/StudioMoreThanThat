@@ -286,26 +286,16 @@ font-family: var(--primary_font);
    body{
      background: var(--primary_color);
      overflow-x: hidden;
-<<<<<<< HEAD
-     width: 100%
-=======
-	   
->>>>>>> 3c1a210989533fbcaac6236205caa5ae0efc44cf
+     width: 100%;
    }
    header{
      position: fixed;
      height: 131.5px;
      background-color: var(--primary_color);
      width: 100%;
-<<<<<<< HEAD
      z-index: 10;
      top: 0;
      left: 0;
-=======
-    z-index: 10;
-    top: 0;
-    left: 0;
->>>>>>> 3c1a210989533fbcaac6236205caa5ae0efc44cf
    }
   .nav_section{
   }
