@@ -293,6 +293,7 @@ font-family: var(--primary_font);
      padding: 0;
    }
    header{
+     position: fixed;
      top: 0;
      left: 0;
      height: 131.5px;
@@ -349,11 +350,11 @@ font-family: var(--primary_font);
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons{
   width: 42px;
   height: 42px;
-  background-color: var(--footer_color);
+  background-color: #C4C4C4;
   text-align:center;
   line-height: 56px;
   border-radius: 0.50rem;
-  border: 1px solid #000;
+  border: 1px solid #777777;
 }
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons svg{
   width: 28px;
@@ -529,12 +530,10 @@ font-family: var(--primary_font);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
   height: 600px;
   width: 140%;
    margin: 0;
-   /* padding: 5rem; */
-   /* width: 500px; */
+
    margin-bottom: 50px;
    z-index: -1;
 
@@ -566,7 +565,7 @@ font-family: var(--primary_font);
     margin-bottom: 15px;
     width: 35px;
     height: 35px;
-    color: Var(--secondary_color);
+    color: var(--secondary_color);
  }
  .igfeed_container .igfeed_section img{
    width: 425px;
