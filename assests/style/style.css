@@ -259,7 +259,7 @@ font-family: var(--primary_font);
   width: 144px;
   margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: var(--secondary_color);
 }
 .footer_container .footer_section .social_media_icons .icons{
