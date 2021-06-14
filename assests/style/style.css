@@ -100,11 +100,15 @@ header{
 }
 .navbar_container .nav_section ul li{
   margin-right: 42px;
+  line-height: 21px;
+
 }
 .navbar_container .nav_section ul li svg{
   font-size: 21px;
   color: var(--primary_color);
   margin-top: -2px;
+  margin-top: -1.8px;
+
 }
 
 .navbar_container .nav_section ul li a {
@@ -255,7 +259,7 @@ font-family: var(--primary_font);
   width: 144px;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: var(--secondary_color);
 }
 .footer_container .footer_section .social_media_icons .icons{
@@ -268,7 +272,7 @@ font-family: var(--primary_font);
   font-size: 12px;
   font-family: 'dream_orphansregular';
   white-space:nowrap;
-  margin-left: -4px;
+
 }
 
 
@@ -379,11 +383,13 @@ font-family: var(--primary_font);
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  width: 40%;
  align-items: center;
+margin-top: 4px;
+
 }
+
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons{
- margin-left: 26px;
+ padding:0.8rem;
 }
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons svg{
   width: 44px;
@@ -396,7 +402,7 @@ font-family: var(--primary_font);
      display: block;
      height: 159px;
      top: -10px;
-     left:40px;
+     left:39px;
 
    }
 
@@ -420,7 +426,7 @@ font-family: var(--primary_font);
   .mobile_header .menu{
     position: absolute;
     top: 30px;
-    right: 40px;
+    right: 39px;
     width: 45px;
     align-items: center;
   }
@@ -616,12 +622,15 @@ font-family: var(--primary_font);
   padding: 0;
   width: 100%;
 }
-.footer_container .footer_section .footer_description{
-  margin-left: -16px;
-  /* margin: auto -20px; */
-}
 .footer_container .footer_section .social_media_icons{
-  margin-right: -32px;
+  width: 9.375rem;
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: space-between;
+}
+.footer_container .footer_section {
+  padding: 0 2.4rem;
+
 }
 
 }
@@ -749,13 +758,20 @@ font-family: var(--primary_font);
   .footer_container{
     margin: 0;
   }
-  .footer_container .footer_section .footer_description{
-    margin-left: -45px;
-    font-family: 'dream_orphansregular';
-
-    /* margin: auto -20px; */
+  .footer_container .footer_section {
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: space-between;
   }
   .footer_container .footer_section .social_media_icons{
-    margin-right: -50px;
+    width: 140px;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: space-between;
+
+  }
+  .footer_container .footer_section .social_media_icons svg{
+    width: 24px;
+    height: 24px;
   }
 }
