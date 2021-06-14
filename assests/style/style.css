@@ -104,15 +104,17 @@ header{
 .navbar_container .nav_section ul li svg{
   font-size: 21px;
   color: var(--primary_color);
+  margin-top: -2px;
 }
 
 .navbar_container .nav_section ul li a {
   color: var(--primary_color);
-  font-size: var(--h3_font);
+  font-size: var(--h4_font);
   text-transform: uppercase;
   font-family: 'dream_orphansregular';
   letter-spacing: 1px;
   position: relative;
+
 }
 .navbar_container .nav_section ul li .underline:hover::before{
   content: '';
@@ -145,10 +147,12 @@ header{
   margin: 0;
   /* position: relative; */
   z-index: -10;
+  background-size: cover;
 }
 .image_container .mySlides img{
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-size: contain;
 }
 .image_container .mySlides .fade {
   -webkit-animation-name: fade;
@@ -171,11 +175,14 @@ header{
 }
 
 /* ======= ABOUT CONTAINER ======== */
+.about_container_mobile{
+  display: none;
+}
 .about_container{
 margin-top: -5px;
 width: 100%;
 background: var(--green_color);
-height: 20.99rem;
+height: 25.25rem;
 position: relative;
 z-index: -10;
 color: var(--primary_color);
@@ -210,15 +217,7 @@ font-family: var(--primary_font);
   letter-spacing: 2px;
 }
 .about_container .about_section .about_heading .read_more{
-  margin: -10px;
-}
-.greenplate{
-  width: 100%;
-  background: red;
-  height: 5.6rem;
-  margin-top: -10px;
-  position: absolute;
-  z-index: -1;
+  margin: -20px;
 }
 
 .blueportion .blue_part{
@@ -234,11 +233,12 @@ font-family: var(--primary_font);
 }
 /* ========== FOOTER CONTAINER ======== */
 .footer_container{
+  position: relative;
   display: flex;
   align-items: center;
   bottom: 0;
   left: 0;
-  height: 4.5rem;
+  height: 60px;
   width: 100%;
   background: var(--footer_color);
   border: 1px solid var(--border);
@@ -259,24 +259,42 @@ font-family: var(--primary_font);
   color: var(--secondary_color);
 }
 .footer_container .footer_section .social_media_icons .icons{
-  color: var(--secondary_color);
+  color: #505050;
 }
 .footer_container .footer_section .social_media_icons .icons:hover{
-  color: var(--primary_color);
+  color: var(--secondary_color);
+}
+.footer_container .footer_section p{
+  font-size: 12px;
+  font-family: 'dream_orphansregular';
+  white-space:nowrap;
+  margin-left: -4px;
 }
 
 
-@media screen and (min-device-width: 1400px) {
+@media screen and (min-device-width: 992px) {
 
   .about_container{
-    height: 24.5rem;
+    height: 20.6rem;
   }
   .about_container .about_section{
-    margin-top: 50px;
-    font-size: 28px;
+    margin-top: 2rem;
+    font-size: 18px;
   }
 }
-@media screen and (max-device-width: 1200px) {
+
+
+@media screen and (max-device-width: 1280px) {
+
+  .about_container{
+    height: 25.9rem;
+  }
+  .about_container .about_section{
+    margin-top: 2.5rem;
+    font-size: 21px;
+  }
+}
+/* @media screen and (max-device-width: 1200px) {
   .about_container{
     height: 24.5rem;
   }
@@ -284,16 +302,16 @@ font-family: var(--primary_font);
     margin-top: 60px;
 
   }
-}
+} */
 /* ===== MOBILE VIEW ========= */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
    body{
      background: var(--primary_color);
      overflow-x: hidden;
      width: 100%;
      z-index: -1;
-     margin: 0;
-     padding: 0;
+     height: 100%;
+     position: relative;
    }
    header{
      position: fixed;
@@ -324,11 +342,11 @@ font-family: var(--primary_font);
   .navbar_container .nav_section  {
     display: none;
     position: absolute;
-    transform: translateX(450px);
+    transform: translateX(550px);
     transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
     top: -40px;
     right: 0px;
-    height: 145vh;
+    height: 120vh;
     width: 70%;
     background: var(--green_color);
     z-index: -1;
@@ -336,7 +354,7 @@ font-family: var(--primary_font);
 
   }
    .navbar_container .nav_section .navbar_items {
-     height: 145vh;
+     height: 100vh;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -344,9 +362,13 @@ font-family: var(--primary_font);
 
    }
 .navbar_container .nav_section .navbar_items .navbar_item{
-    margin: 12px 30% 12px ;
+    margin: 32px 35% 32px ;
     align-self: flex-start;
     color: var(--primary_color);
+    font-size: var(--h2_font);
+    font-family: 'dream_orphansregular';
+    font-weight: normal;
+
 }
 .navbar_container .nav_section .navbar_items .navbar_item .underline{
     font-size: 36px;
@@ -357,30 +379,24 @@ font-family: var(--primary_font);
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 40%;
  align-items: center;
 }
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons{
-  width: 42px;
-  height: 42px;
-  background-color: #C4C4C4;
-  text-align:center;
-  line-height: 56px;
-  border-radius: 0.50rem;
-  border: 1px solid #777777;
+ margin-left: 26px;
 }
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons svg{
-  width: 28px;
-  height: 28px;
-  color: #000;
-
+  width: 44px;
+  height: 44px;
+  color: #fff;
 }
 
    .navbar_container .mobile_header .mobilelogo img{
      position: absolute;
      display: block;
+     height: 159px;
      top: -10px;
-     left: 20px;
+     left:40px;
 
    }
 
@@ -404,7 +420,7 @@ font-family: var(--primary_font);
   .mobile_header .menu{
     position: absolute;
     top: 30px;
-    right: 25px;
+    right: 40px;
     width: 45px;
     align-items: center;
   }
@@ -476,8 +492,8 @@ font-family: var(--primary_font);
 
    .carousel_container_mobile .image_container_mobile .mySlides_mobile img{
     /* width: auto; */
-    width: 140%;
-    height: 120vh;
+    width: 100%;
+    height: 90vh;
    }
 
    .image_container_mobile{
@@ -510,99 +526,236 @@ font-family: var(--primary_font);
    }
 
 
+  .greenplate{
+    width: 100%;
+    position: absolute;
+    margin-top: -10px;
+  }
+  .greenplate .plate{
+    background-color: var(--green_color);
+    height: 56px;
+  }
 
-   /* ====== ABOUT SECTON ===== */
   .about_container{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    background: var(--primary_color);
-    color: #000;
-    font-size: 21px;
-    margin: 70px 20px 0px 75px;
-   z-index: -1;
-  }
-    .about_container .about_section{
-      margin: 0;
-    }
-
-  .about_container .about_section .about_heading{
-    color: #000;
-  }
-  .about_container .about_section .about_heading .read_more{
-    margin-left:  345px;
-    margin-top: 5px;
-  }
-  /* ======= HIDDING BLUE PORTON ====== */
-  .blueportion{
     display: none;
   }
-
-  /* ========== INSTAGRAM FEED CONTAINER =========== */
- .igfeed_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  width: 140%;
-   margin: 0;
-
-   margin-bottom: 50px;
-   z-index: -1;
-
-
- }
- .igfeed_container .igfeed_section{
-   display: flex;
-   justify-content: center;
-   align-items: flex-start;
-   flex-direction: column;
-
- }
-  .igfeed_container .igfeed_section .view_feed{
+  .about_container_mobile{
     display: flex;
-    align-items:center;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 32px;
+    margin-top: 100px;
 
   }
-    .igfeed_container .igfeed_section .view_feed p{
-      font-size: var(--h4_font);
-      text-transform: uppercase;
-      color: #777;
-      margin-left: 20px;
-      margin-bottom: 10px;
-      line-height: -20px;
-    }
-
- .igfeed_container .igfeed_section .view_feed svg{
-    margin-bottom: 15px;
-    width: 35px;
-    height: 35px;
-    color: var(--secondary_color);
- }
- .igfeed_container .igfeed_section img{
-   width: 425px;
-   margin-bottom: 50px;
- }
-
-.footer_container  {
-  /* position: relative; */
-  width: 140%;;
-
+  .about_container_mobile .about_section_mobile{
+    width: 95vw;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+.about_container_mobile .about_section_mobile .about_title_mobile .span1 p{
+ letter-spacing: 10.2px;
+ font-size:56px;
 }
-.footer_container .footer_section{
+.about_container_mobile .about_section_mobile .about_title_mobile .span2 p{
+ letter-spacing: 23.2px;
+ font-size:56px;
+ position: relative;
+}
+.about_container_mobile .about_section_mobile .read_more_mobile{
+  /* position: absolute; */
+  margin-right: 18px;
+  margin-top: 5px;
+}
+.about_container_mobile .about_section_mobile .read_more_mobile img{
+  /* position: absolute; */
+  height: 73px;
+}
+
+.igfeed_container{
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: inherit;
+  justify-content: center;
+  width: 100%;
+  margin: 80px auto;
 }
-.footer_container p{
-  text-align: center;
-  /* margin-left: 90px; */
+.igfeed_container .igfeed_section{
+  display: flex;
+  flex-direction: column;
+  margin: auto 20px;
+}
+.igfeed_container .igfeed_section .view_feed{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
 
+}
+.igfeed_container .igfeed_section .view_feed svg{
+  width: 44px;
+  height: 44px;
+  color: #777777;
+}
+.igfeed_container .igfeed_section .view_feed p{
+  font-size: 22px;
+  font-family: 'dream_orphansregular';
+  font-weight: 400;
+  color: #777777;
+  margin-left: 30px;
+  margin-bottom: 4px;
+  letter-spacing: 3px;
+}
+.igfeed_container .igfeed_section img{
+  width: 90vw;
+
+}
+
+.footer_container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.footer_container .footer_section .footer_description{
+  margin-left: -16px;
+  /* margin: auto -20px; */
 }
 .footer_container .footer_section .social_media_icons{
-  display: none;
+  margin-right: -32px;
 }
 
+}
+
+@media screen and (max-device-width: 480px) {
+  html{
+    margin: 0;
+  }
+  .navbar_container .mobile_header .mobilelogo img{
+    position: absolute;
+    display: block;
+    height: 8.063rem;
+    top: -10px;
+    left:40px;
+
+  }
+  .greenplate .plate{
+    background-color: var(--green_color);
+    height: 48px;
+  }
+  .whitepart{
+    height: 7.875rem;
+  }
+  .carousel_container_mobile{
+    margin-top:7.875rem;
+  }
+  .navbar_container .mobile_header .mobilelogo img{
+    /* height: 129px; */
+    top: 5px;
+    left: 20px;
+
+  }
+  .navbar_container .nav_section .navbar_items .navbar_item{
+      margin: 10px;
+      margin-left: 5.052rem;
+      align-self: flex-start;
+      color: var(--primary_color);
+      font-size: var(--h2_font);
+      font-family: 'dream_orphansregular';
+      font-weight: lighter;
+  }
+  .navbar_container .nav_section .navbar_items .mobile_social_media{
+     margin-left: -59px;
+  }
+  .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons svg{
+    width: 24px;
+    height: 24px;
+    color: #fff;
+  }
+  .mobile_header .menu{
+    top: 30px;
+    right: 20px;
+    width: 45px;
+    align-items: center;
+  }
+  .about_container_mobile{
+    width: 100vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about_container_mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 100px;
+
+  }
+  .about_container_mobile .about_section_mobile{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+
+    /* margin: auto 20px; */
+    /* margin-left: 15px; */
+  }
+
+  .about_container_mobile .about_section_mobile .about_title_mobile {
+    font-size: 1rem;
+    /* margin-left: 160px; */
+    letter-spacing: 0px;
+    line-height: 1.33rem;
+    /* margin: auto 10px; */
+    width: 100%;
+
+  }
+  .about_container_mobile .about_section_mobile .about_title_mobile .span1 p {
+    font-size: 1.75rem;
+    letter-spacing: 0.22rem;
+    width: 100%;
+    margin: 0.5em auto;
+
+  }
+  .about_container_mobile .about_section_mobile .about_title_mobile .span2 p {
+    font-size: 1.75em;
+    letter-spacing: 0.6rem;
+  }
+  .about_container_mobile .about_section_mobile .read_more_mobile img{
+    width: 73px;
+    height: 46px;
+    margin-right: -20px;
+    margin-top: 10px;
+  }
+  .igfeed_container .igfeed_section .view_feed svg{
+    width: 24px;
+    height: 24px;
+  }
+  .igfeed_container .igfeed_section .view_feed p{
+    font-size: var(--h4_font);
+    margin-left: 25px;
+    margin-bottom: 4px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .footer_container{
+    margin: 0;
+  }
+  .footer_container .footer_section .footer_description{
+    margin-left: -45px;
+    font-family: 'dream_orphansregular';
+
+    /* margin: auto -20px; */
+  }
+  .footer_container .footer_section .social_media_icons{
+    margin-right: -50px;
+  }
 }
