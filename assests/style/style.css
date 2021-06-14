@@ -106,6 +106,7 @@ header{
 .navbar_container .nav_section ul li svg{
   font-size: 21px;
   color: var(--primary_color);
+
   margin-top: -1.8px;
 }
 
@@ -270,7 +271,7 @@ font-family: var(--primary_font);
   font-size: 12px;
   font-family: 'dream_orphansregular';
   white-space:nowrap;
-  /* margin-left: -4px; */
+
 }
 
 
@@ -381,13 +382,14 @@ font-family: var(--primary_font);
   /* margin-top: 20px; */
   display: flex;
   justify-content: space-between;
-  /* width: 40%; */
-  align-items: center;
-  margin-top: 4px;
-  /* margin-left: 18px; */
+
+ align-items: center;
+margin-top: 4px;
+
 }
+
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons{
- padding: 1rem;
+ padding:0.8rem;
 }
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons svg{
   width: 32px;
