@@ -334,7 +334,7 @@ font-family: var(--primary_font);
     left: 0;
     display: block;
     width: 100%;
-    background: var(--primary_color);
+    background: #ffffff;
     height: 131.5px;
     z-index: -1;
   }
