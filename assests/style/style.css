@@ -100,11 +100,13 @@ header{
 }
 .navbar_container .nav_section ul li{
   margin-right: 42px;
+  line-height: 21px;
+
 }
 .navbar_container .nav_section ul li svg{
   font-size: 21px;
   color: var(--primary_color);
-  margin-top: -2px;
+  margin-top: -1.8px;
 }
 
 .navbar_container .nav_section ul li a {
@@ -268,7 +270,7 @@ font-family: var(--primary_font);
   font-size: 12px;
   font-family: 'dream_orphansregular';
   white-space:nowrap;
-  margin-left: -4px;
+  /* margin-left: -4px; */
 }
 
 
@@ -334,7 +336,7 @@ font-family: var(--primary_font);
     left: 0;
     display: block;
     width: 100%;
-    background: #ffffff;
+    background: var(--primary_color);
     height: 131.5px;
     z-index: -1;
   }
@@ -365,7 +367,7 @@ font-family: var(--primary_font);
     margin: 32px 35% 32px ;
     align-self: flex-start;
     color: var(--primary_color);
-    font-size: var(--h2_font);
+    font-size: 12px;
     font-family: 'dream_orphansregular';
     font-weight: normal;
 
@@ -376,18 +378,20 @@ font-family: var(--primary_font);
 }
 
 .navbar_container .nav_section .navbar_items .mobile_social_media{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
   justify-content: space-between;
-  width: 40%;
- align-items: center;
+  /* width: 40%; */
+  align-items: center;
+  margin-top: 4px;
+  /* margin-left: 18px; */
 }
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons{
- margin-left: 26px;
+ padding: 1rem;
 }
 .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons svg{
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   color: #fff;
 }
 
@@ -396,7 +400,7 @@ font-family: var(--primary_font);
      display: block;
      height: 159px;
      top: -10px;
-     left:40px;
+     left: 39px;
 
    }
 
@@ -420,7 +424,7 @@ font-family: var(--primary_font);
   .mobile_header .menu{
     position: absolute;
     top: 30px;
-    right: 40px;
+    right: 39px;
     width: 45px;
     align-items: center;
   }
@@ -471,7 +475,6 @@ font-family: var(--primary_font);
 .active .toggle, .active .toggle::before, .active .toggle::after {
   transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
 }
-
 
 
   .instagram{
@@ -546,7 +549,7 @@ font-family: var(--primary_font);
     width: 100%;
     font-size: 32px;
     margin-top: 100px;
-
+    /* padding: 0 2.4rem; */
   }
   .about_container_mobile .about_section_mobile{
     width: 95vw;
@@ -569,10 +572,7 @@ font-family: var(--primary_font);
   margin-right: 18px;
   margin-top: 5px;
 }
-.about_container_mobile .about_section_mobile .read_more_mobile img{
-  /* position: absolute; */
-  height: 73px;
-}
+
 
 .igfeed_container{
   display: flex;
@@ -580,6 +580,8 @@ font-family: var(--primary_font);
   justify-content: center;
   width: 100%;
   margin: 80px auto;
+  /* padding: 0 2.4rem; */
+
 }
 .igfeed_container .igfeed_section{
   display: flex;
@@ -616,12 +618,15 @@ font-family: var(--primary_font);
   padding: 0;
   width: 100%;
 }
-.footer_container .footer_section .footer_description{
-  margin-left: -16px;
-  /* margin: auto -20px; */
-}
 .footer_container .footer_section .social_media_icons{
-  margin-right: -32px;
+  width: 9.375rem;
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: space-between;
+}
+.footer_container .footer_section {
+  padding: 0 2.4rem;
+
 }
 
 }
@@ -629,14 +634,6 @@ font-family: var(--primary_font);
 @media screen and (max-device-width: 480px) {
   html{
     margin: 0;
-  }
-  .navbar_container .mobile_header .mobilelogo img{
-    position: absolute;
-    display: block;
-    height: 8.063rem;
-    top: -10px;
-    left:40px;
-
   }
   .greenplate .plate{
     background-color: var(--green_color);
@@ -650,21 +647,21 @@ font-family: var(--primary_font);
   }
   .navbar_container .mobile_header .mobilelogo img{
     /* height: 129px; */
+    height: 8.063rem;
     top: 5px;
-    left: 20px;
+    left: 19px;
 
   }
-  .navbar_container .nav_section .navbar_items .navbar_item{
-      margin: 10px;
-      margin-left: 5.052rem;
-      align-self: flex-start;
-      color: var(--primary_color);
-      font-size: var(--h2_font);
-      font-family: 'dream_orphansregular';
-      font-weight: lighter;
-  }
+    .navbar_container .nav_section {
+      font-size: 16px;
+
+    }
+
   .navbar_container .nav_section .navbar_items .mobile_social_media{
-     margin-left: -59px;
+     margin-left: 2.813rem;
+  }
+  .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons{
+     padding: 0.5rem
   }
   .navbar_container .nav_section .navbar_items .mobile_social_media .mobile_sm_icons svg{
     width: 24px;
@@ -673,7 +670,7 @@ font-family: var(--primary_font);
   }
   .mobile_header .menu{
     top: 30px;
-    right: 20px;
+    right: 19px;
     width: 45px;
     align-items: center;
   }
@@ -746,16 +743,25 @@ font-family: var(--primary_font);
     letter-spacing: 4px;
     font-weight: 400;
   }
+
   .footer_container{
     margin: 0;
   }
-  .footer_container .footer_section .footer_description{
-    margin-left: -45px;
-    font-family: 'dream_orphansregular';
-
-    /* margin: auto -20px; */
+  .footer_container .footer_section {
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: space-between;
   }
   .footer_container .footer_section .social_media_icons{
-    margin-right: -50px;
+    width: 140px;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: space-between;
+
   }
+  .footer_container .footer_section .social_media_icons svg{
+    width: 24px;
+    height: 24px;
+  }
+
 }
