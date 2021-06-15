@@ -190,6 +190,7 @@ margin-top: -5px;
 width: 100%;
 background: var(--green_color);
 height: 468px;
+height: 28.75rem;
 position: relative;
 z-index: -10;
 color: var(--primary_color);
