@@ -503,6 +503,7 @@ font-family: var(--primary_font);
     width: 100%;
     position: absolute;
     margin-top: -5px;
+    background-color: var(--green_color);
   }
   .fixedPos{
     position: fixed;
@@ -637,6 +638,7 @@ font-family: var(--primary_font);
   .greenplate{
     display: block;
     margin-top: -10px;
+    /* position: sticky; */
   }
   .greenplate .plate{
 
@@ -649,10 +651,11 @@ font-family: var(--primary_font);
 .whitepart {
       position: fixed;!important
       top: 0;
+      right: 0;
       left: 0;
       display: block;!important
       width: 100%;
-      background: var(--primary_color);
+      background: #fff;
       height: 127.5px;
       z-index: -1;
 }
@@ -708,7 +711,7 @@ font-family: var(--primary_font);
     align-items: center;
     width: 100%;
     font-size: 1em;
-    margin-top: 40px;
+    margin-top: 50px;
 
   }
   .about_container_mobile .about_section_mobile{
