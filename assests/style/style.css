@@ -299,7 +299,6 @@ font-family: var(--primary_font);
      background-color: var(--primary_color);
      width: 100%;
      z-index: 99;
-
    }
    main{
     display: relative;
@@ -614,6 +613,27 @@ font-family: var(--primary_font);
   html{
     margin: 0;
   }
+  body{
+    background: var(--primary_color);
+    overflow-x: hidden;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    position: relative;
+  }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary_color);
+    width: 100%;
+    z-index: 99;
+  }
+  main{
+   display: relative;
+   width: 100%;
+   z-index: -1;
+ }
   .greenplate{
     display: block;
     margin-top: -10px;
@@ -626,17 +646,16 @@ font-family: var(--primary_font);
   .greenplate_tab{
     display: none;
   }
-    .whitepart {
-      position: fixed;
+.whitepart {
+      position: fixed;!important
       top: 0;
       left: 0;
-      display: block;
+      display: block;!important
       width: 100%;
       background: var(--primary_color);
-      height: 131.5px;
+      height: 127.5px;
       z-index: -1;
-
-  }
+}
   .carousel_container_mobile{
     margin-top:7.875rem;
   }
