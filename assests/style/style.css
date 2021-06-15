@@ -147,6 +147,12 @@ header{
   display: none;
 }
 
+.greenplate_tab{
+  display: none;
+}
+.greenplate_tab{
+  display: none;
+}
 /* ===== CAROUSEL CONTAINER ======= */
 
 .image_container{
@@ -189,16 +195,12 @@ header{
 margin-top: -5px;
 width: 100%;
 background: var(--green_color);
-height: 468px;
 height: 28.75rem;
 position: relative;
 z-index: -10;
 color: var(--primary_color);
 font-size: var(--h3_font);
 font-family: var(--primary_font);
-
-
-
 }
 .about_container .about_section{
   display: flex;
@@ -495,6 +497,10 @@ font-family: var(--primary_font);
 
 
   .greenplate{
+     display: none;
+  }
+  .greenplate_tab{
+    display: block;
     width: 100%;
     position: absolute;
     margin-top: -5px;
@@ -507,7 +513,7 @@ font-family: var(--primary_font);
     z-index: 1;
     top: 131.5px;
 }
-  .greenplate .plate{
+  .greenplate_tab .plate{
     background-color: var(--green_color);
     height: 56px;
   }
@@ -552,7 +558,7 @@ font-family: var(--primary_font);
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 80px auto;
+  margin: 40px auto;
   /* padding: 0 2.4rem; */
 
 }
@@ -608,12 +614,28 @@ font-family: var(--primary_font);
   html{
     margin: 0;
   }
+  .greenplate{
+    display: block;
+    margin-top: -10px;
+  }
   .greenplate .plate{
+
     background-color: var(--green_color);
     height: 48px;
   }
-  .whitepart{
-    height: 7.875rem;
+  .greenplate_tab{
+    display: none;
+  }
+    .whitepart {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      background: var(--primary_color);
+      height: 131.5px;
+      z-index: -1;
+
   }
   .carousel_container_mobile{
     margin-top:7.875rem;
@@ -656,7 +678,7 @@ font-family: var(--primary_font);
     display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 64px;
+    /* margin-top: 20px; */
     margin: 0;
     padding: 0;
   }
@@ -667,7 +689,7 @@ font-family: var(--primary_font);
     align-items: center;
     width: 100%;
     font-size: 1em;
-    margin-top: 100px;
+    margin-top: 40px;
 
   }
   .about_container_mobile .about_section_mobile{
