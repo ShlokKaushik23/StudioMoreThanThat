@@ -753,7 +753,7 @@ font-family: var(--primary_font);
     }
   .mobile_header .menu{
     top: 20px;
-    right: 11px;
+    right: 0.5rem;
     width: 45px;
     align-items: center;
   }
@@ -817,6 +817,9 @@ font-family: var(--primary_font);
   }
   .igfeed_container .igfeed_section .view_feed {
     margin-bottom: -5px;
+    display: flex;
+    align-items: center;
+    height: 44px;
   }
   .igfeed_container .igfeed_section .view_feed svg{
     width: 24px;
