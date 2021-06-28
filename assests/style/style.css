@@ -138,6 +138,10 @@ header{
   z-index: 100;
   display: block;
 }
+.sml-logo img{
+  height: 150px;
+  display: block;
+}
 
 .mobile_header{
   display: none;
@@ -182,6 +186,22 @@ header{
   display: none;
 }
 
+.carosuel_bottom{
+  top: 135px;
+  z-index: -1;
+  height: 62px;
+  background: #010101;
+  display: block;
+  width: 100%;
+  margin-top: -4px;
+}
+.carosuel_bottom_fixed{
+  position: fixed;
+  top: 136px;
+  margin-top: 0px;
+
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -191,7 +211,7 @@ header{
   from {opacity: .4}
   to {opacity: 1}
 }
-
+.
 /* ==== LOGO COVER SECTION  ===== */
 .cover_section{
   display: block;
@@ -239,7 +259,7 @@ font-family: var(--primary_font);
   flex-direction: column;
   margin-left: 11rem;
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 5rem;
   z-index: -99;
 }
 .about_container .about_section .about_title{
@@ -247,19 +267,31 @@ font-family: var(--primary_font);
   flex-direction: column;
 
 }
-.about_container .about_section .about_heading{
-  line-height: 44px;
+.about_container .about_section .about_heading_container .about_heading{
+  line-height: 55px;
   letter-spacing: 9.7px;
   text-transform: uppercase;
   font-size: 41px;
   color: var(--primary_color);
   font-weight: lighter;
+  /* margin-top: 10px; */
+
 }
-.about_container .about_section .about_heading span{
+.about_container .about_section .about_heading_container .about_heading .exp{
   letter-spacing: 2px;
+
 }
-.about_container .about_section .about_heading .read_more{
-  margin: -20px;
+.about_container .about_section .about_heading_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+.about_container .about_section .about_heading_container img{
+  margin-left: -10px;
+  margin-bottom: -22px;
+  height: 51px;
+  width: 81px;
 }
 
 
@@ -347,6 +379,8 @@ font-family: var(--primary_font);
     display: none;
   }
 
+
+
   .navbar_container .nav_section  {
     display: none;
     position: absolute;
@@ -405,9 +439,12 @@ font-family: var(--primary_font);
    .mobilelogo{
      display: block;
    }
-   .logo{
+   .navbar_container .logo img{
      display: none;
    }
+   .sml-logo img{
+       display: none;
+  }
    .mobile_header{
      display: flex;
      align-self: center;
@@ -583,7 +620,11 @@ font-family: var(--primary_font);
  font-size:56px;
  position: relative;
 }
-.about_container_mobile .about_section_mobile .read_more_mobile{
+.about_container_mobile .about_section_mobile .read_more_mobile img{
+  width: 152px;
+  height: 95.70;
+}
+.about_container_mobile .about_section_mobile .read_more_mobile {
   /* position: absolute; */
   margin-right: 18px;
   margin-top: 5px;
@@ -609,32 +650,40 @@ font-family: var(--primary_font);
   display: flex;
   align-items: center;
   height: 44px;
-  margin-bottom: 0.33rem;
+  margin-bottom: 1rem;
 
 }
 .igfeed_container .igfeed_section .view_feed svg{
   width: 44px;
   height: 44px;
   color: #777777;
+  z-index: 100;
+
 }
-.igfeed_container .igfeed_section .view_feed p{
+.igfeed_container .igfeed_section .view_feed  p{
   font-size: 22px;
   font-family: 'dream_orphansregular';
   font-weight: 400;
   color: #777777;
   margin-left: 20px;
-  margin-bottom: 4px;
   letter-spacing: 3px;
-}
-.igfeed_container .igfeed_section img{
-  width: 90vw;
 
+}
+.igfeed_container .igfeed_section  img{
+  width: 90vw;
+  z-index: 1;
 }
 
 .footer_container{
   margin: 0;
   padding: 0;
   width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  height: 60px;
 }
 .footer_container .footer_section .social_media_icons{
   width: 9.375rem;
@@ -680,6 +729,12 @@ font-family: var(--primary_font);
  .cover_section{
    display: none;
  }
+.logo{
+  display: none;
+}
+ .sml-logo{
+     display: none;
+   }
   .greenplate{
     display: block;
     margin-top: -10px;
@@ -838,8 +893,12 @@ font-family: var(--primary_font);
 
   .footer_container{
     margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
     height: 60px;
-
   }
   .footer_container .footer_section {
     padding: 0 1.2rem;

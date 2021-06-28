@@ -111,7 +111,7 @@
     </div>
 
 
-      <div class="logo"><img src="assests\img\1.png" alt=""></div>
+      <div class="logo"><img src="assests\img\white_logo.png" alt=""></div>
       <div class="mobile_header">
         <div class="mobilelogo"><img src="assests\img\black_logo.png" border="0"></div>
 
@@ -132,6 +132,7 @@
          <div class="mySlides fade"><img src="assests\img\2.jpg" alt=""></div>
          <div class="mySlides fade"><img src="assests\img\3.jpg" alt=""></div>
        </div>
+       <div class="carosuel_bottom"></div>
      </section>
 
      <section class="carousel_container_mobile">
@@ -174,9 +175,14 @@
         <span class="about_desc_head">
          We like to term this intersection as designing
         </span>
-       <p class="about_heading"> <span  class="exp">EXPERIENCE-BASED</span> <br>ENVIRONMENTS
-         <img class="read_more" src="assests\img\read more button_illustrator.png" alt="">
-       </p>
+
+        <div class="about_heading_container">
+          <p class="about_heading"> <span class="exp">EXPERIENCE-BASED</span> <br>	ENVIRONMENTS
+          <img class="read_more" src="assests\img\read more button_illustrator.png" alt="">
+
+        </div>
+
+
        </div>
      </section>
 
@@ -223,14 +229,15 @@
            <a href="https://www.instagram.com/studio.morethanthat/">
              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20"
-             height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+             height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+           </svg>
            </a>
 
-          <p href="https://www.instagram.com/studio.morethanthat/">VIEW OUR FEED </p>
+           <a href="https://www.instagram.com/studio.morethanthat/"> <p>VIEW OUR FEED </p></a>
 
          </div>
 
-           <img href="https://www.instagram.com/studio.morethanthat/" src="assests\img\Insta feed.png" alt="">
+             <a href="https://www.instagram.com/studio.morethanthat/"> <img  src="assests\img\Insta feed.png" alt=""> </a>
 
        </div>
      </section>
@@ -272,6 +279,44 @@
   </footer>
 
 <script type="text/javascript">
+
+
+// ==== LOGO SIZE CHANGE
+$(function() { var logo = $(".logo"); $(window).scroll(function() {
+var scroll = $(window).scrollTop();
+
+    if (scroll >= 465) {
+      if(!logo.hasClass("sml-logo")) {
+        logo.hide();
+        logo.removeClass('logo').addClass("sml-logo").fadeIn( "slow");
+      }
+    } else {
+      if(!logo.hasClass("logo")) {
+        logo.hide();
+        logo.removeClass("sml-logo").addClass('logo').fadeIn( "slow");
+      }
+    }
+
+});
+});
+
+$(window).scroll(function() {
+var scroll = $(window).scrollTop();
+
+if (scroll >= 465) {
+    $(".carosuel_bottom").addClass("carosuel_bottom_fixed");
+
+}
+else{
+
+    $(".carosuel_bottom").removeClass("carosuel_bottom_fixed");
+
+}
+ });
+
+
+
+
 
 
 $(window).scroll(function() {
