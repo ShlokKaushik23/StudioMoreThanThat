@@ -578,8 +578,9 @@ z-index: var(--z_index_top);
   background: var(--secondary_color);
   color: var(--primary_color);
   font-family: 'dream_orphansregular';
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
+  letter-spacing: 3.5px;
 }
 .contact_container .contact_container_right  .contact_form .submit_btn button:hover{
   border: 1px solid var(--secondary_color);
@@ -878,7 +879,7 @@ z-index: var(--z_index_top);
   }
   .greenplate_contact .whiteplate{
     height: 12px;
-    background-color: #fff;
+    background-color: #404241;
   }
 
   .greenplate_tab .plate{
@@ -888,7 +889,7 @@ z-index: var(--z_index_top);
   .greenplate_tab .whiteplate{
     margin-top:4px;
     height: 12px;
-    background: var(--primary_color)
+    background: var(--primary_color);
   }
 
 .fixedPos{
@@ -1052,7 +1053,7 @@ z-index: var(--z_index_top);
 
 /* ======== CONTACT US PAGE ================= */
 .navbar_container.hideshade{
-  background: #fff;
+  background: var(--secondary_color);
 }
 .contact_container{
   width: 100%;
@@ -1083,7 +1084,7 @@ z-index: var(--z_index_top);
   letter-spacing: 2px;
 }
 .contact_container .contact_container_left .contact_details .work{
-  font-size: 36px;
+  font-size: 31px;
   margin-bottom: 5px;
   letter-spacing: 2px;
 }
@@ -1144,17 +1145,20 @@ z-index: var(--z_index_top);
 .contact_container .contact_container_right  .contact_form  .email{
   margin-bottom: 10px;
 }
+
 .contact_container .contact_container_right  .contact_form .submit_btn button{
   width: 100px;
-  height:50px;
+  height: 50px;
   outline: none;
   border: 0px;
   background: var(--secondary_color);
   color: var(--primary_color);
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   font-size: 18px;
   margin-top: 10px;
   font-weight: lighter;
+  text-align: center;
+
 }
 .contact_container .contact_container_right  .contact_form .submit_btn button:hover{
   border: 1px solid var(--secondary_color);
@@ -1251,7 +1255,7 @@ z-index: var(--z_index_top);
   }
   .greenplate_contact .whiteplate{
     height: 12px;
-    background-color: #fff;
+    background-color: #404241;
   }
 
 
@@ -1517,7 +1521,7 @@ z-index: var(--z_index_top);
     letter-spacing: 2px;
   }
   .contact_container .contact_container_left .contact_details .work{
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 5px;
     letter-spacing: 2px;
   }
