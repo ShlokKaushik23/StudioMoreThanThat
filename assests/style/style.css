@@ -1470,9 +1470,7 @@ z-index: var(--z_index_top);
   .footer_container .footer_section .social_media_icons{
     width: 120px;
     display: flex;
-    /* align-items: flex-end; */
     justify-content: space-between;
-
   }
   .footer_container .footer_section .social_media_icons .icons svg{
     height: 14px;
@@ -1495,7 +1493,7 @@ z-index: var(--z_index_top);
     letter-spacing: 2px;
     font-weight: lighter;
     position: relative;
-    margin-top: 18px;
+    margin-top: -1px;
   }
 
   .contact_container .contact_container_left{
@@ -1533,22 +1531,22 @@ z-index: var(--z_index_top);
   .contact_container .contact_container_right{
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 500px;
     background: var(--green_color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     color: #fff;
     z-index: -10;
-    padding: 50px 0px;
+    margin: 0;
   }
   .contact_container .contact_container_right .contact_reachus{
     margin-left: 0px;
+    margin-top: 50px;
   }
   .contact_container .contact_container_right .contact_reachus .contact_us{
-    margin-top: 16px;
+    /* margin-top: 16px; */
     margin-bottom: 10px;
     font-size: 24px;
     font-family: 'dream_orphansregular';
