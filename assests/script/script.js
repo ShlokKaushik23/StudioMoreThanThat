@@ -21,7 +21,7 @@ var scroll = $(window).scrollTop();
 $(window).scroll(function() {
 var scroll = $(window).scrollTop();
 
-if (scroll >= 660) {
+if (scroll >= 580) {
     $(".greenplate").addClass("fixedPos");
 }
 else{
