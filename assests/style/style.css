@@ -540,7 +540,7 @@ z-index: var(--z_index_top);
 }
 .contact_container .contact_container_right .contact_reachus{
   margin-left: 100px;
-  margin-top: 1.375rem;
+  margin-top: 1%;
 }
 .contact_container .contact_container_right .contact_reachus .contact_us{
   margin-bottom: 10px;
@@ -583,6 +583,7 @@ z-index: var(--z_index_top);
   font-size: 16px;
   margin-top: 10px;
   letter-spacing: 3.5px;
+  text-transform: uppercase;
 }
 .contact_container .contact_container_right  .contact_form .submit_btn button:hover{
   border: 1px solid var(--secondary_color);
@@ -1171,6 +1172,7 @@ z-index: var(--z_index_top);
   font-size: 18px;
   margin-top: 10px;
   font-weight: lighter;
+  text-transform: uppercase;
   text-align: center;
 
 }
@@ -1606,6 +1608,7 @@ z-index: var(--z_index_top);
     color: var(--primary_color);
     font-family: 'dream_orphansregular';
     font-size: 16px;
+    text-transform: uppercase;
     margin: 10px 0;
     font-weight: lighter;
   }
