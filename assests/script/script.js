@@ -18,6 +18,14 @@ var scroll = $(window).scrollTop();
 });
 
 
+// ======== ACTIVE NAVBAR
+
+
+
+
+// ========== GREEN BANNER STICKY
+
+
 $(window).scroll(function() {
 var scroll = $(window).scrollTop();
 

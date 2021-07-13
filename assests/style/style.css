@@ -540,7 +540,7 @@ z-index: var(--z_index_top);
 }
 .contact_container .contact_container_right .contact_reachus{
   margin-left: 100px;
-  margin-top: 1%;
+  margin-top: 0.75rem;
 }
 .contact_container .contact_container_right .contact_reachus .contact_us{
   margin-bottom: 10px;
@@ -889,7 +889,7 @@ z-index: var(--z_index_top);
   }
   .greenplate_contact .plate{
     background-color: var(--green_color);
-    height: 60px;
+    height: 100px;
   }
   .greenplate_contact .whiteplate{
     height: 12px;
@@ -1088,7 +1088,7 @@ z-index: var(--z_index_top);
   display: flex;
   justify-content: center;
   align-items:center;
-
+ margin-top: -5px;
 }
 .contact_container .contact_container_left .contact_details{
    margin: 0;
