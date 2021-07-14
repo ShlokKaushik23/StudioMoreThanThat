@@ -26,7 +26,7 @@
   --z_index_top0: -2;
   --z_index_top: -1;
   --z_index_top1: 1;
-  --z_index_top2: 2;
+  --z_index_top2: 3;
   --z_index_top3: 4;
 
 
@@ -131,7 +131,7 @@ z-index: var(--z_index_top3);
 }
 .navbar_container .nav_section{
   margin-top: 36px;
-  z-index: 999;
+  z-index: var(--z_index_top3);
 
 }
 .navbar_container .nav_section ul{
@@ -299,7 +299,7 @@ position: relative;
 color: var(--primary_color);
 font-size: var(--h3_font);
 font-family: var(--primary_font);
-z-index: var(--z_index_top);
+z-index: var(--z_index_top0);
 
 }
 .about_container .about_section{
@@ -338,18 +338,13 @@ z-index: var(--z_index_top);
   align-items: flex-end;
 
 }
-.about_container .about_section .about_heading_container  a{
 
-
-}
 .about_container .about_section .about_heading_container img{
   margin-left: -10px;
   margin-bottom: -4px;
   height: 51px;
   width: 81px;
   display: inline-block;
-  /* z-index: var(--z_index_top1); */
-
 }
 
 
