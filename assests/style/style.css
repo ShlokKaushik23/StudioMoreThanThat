@@ -376,12 +376,12 @@ z-index: var(--z_index_top0);
 }
 .comingsoon_container .soon{
   margin-top: -12px;
-  margin-left: 22px;
+  margin-left: 28px;
 }
 
 .comingsoon_container .soon span{
   display: inline-block;
-  transform: scale(-1,1);
+  transform: scale(1,-1);
 }
 .comingsoon_container a{
   display: inline-block;
@@ -1056,7 +1056,10 @@ z-index: var(--z_index_top0);
 .comingsoon_container h1{
   font-size: 100px;
   font-family: 'dream_orphansregular';
-
+}
+.comingsoon_container .soon{
+  margin-top: -12px;
+  margin-left: 32px;
 }
 
 
@@ -1372,7 +1375,7 @@ z-index: var(--z_index_top0);
 }
 .comingsoon_container .soon{
   margin-top: -12px;
-  margin-left: 16px;
+  margin-left: 22px;
 }
 .comingsoon_container a{
   display: inline-block;
