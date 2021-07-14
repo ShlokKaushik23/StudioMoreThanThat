@@ -235,5 +235,5 @@ if (slideIndexMobile > slidesMobile.length) {slideIndexMobile = 1}
 slidesMobile[slideIndexMobile -1].style.display = "block";
 
 
-setTimeout(showSlidesMobile, 1200000); // Change image every x seconds
+setTimeout(showSlidesMobile, 12000); // Change image every x seconds
 }
