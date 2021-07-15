@@ -488,15 +488,11 @@ z-index: var(--z_index_top0);
   width: 45vw;
   background: #404241;
   display: flex;
-  justify-content: flex-start;
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   /* height: calc(100vh - 60px); */
 }
-.contact_container .contact_container_left .contact_details{
-  margin-left: 72px;
-  margin-top: 211px;
 
-}
 .contact_container .contact_container_left .contact_details .name{
   font-size: 38px;
   margin-bottom: 5px;
