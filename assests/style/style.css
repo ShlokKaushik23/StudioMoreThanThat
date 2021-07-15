@@ -464,8 +464,6 @@ z-index: var(--z_index_top0);
   font-style: italic;
 }
 
-
-
 /* ======================= CONTACT PAGE ===================== */
 
 .navbar_container.hideshade{
@@ -496,7 +494,7 @@ z-index: var(--z_index_top0);
 .contact_container .contact_container_left .contact_details .name{
   font-size: 38px;
   margin-bottom: 5px;
-  letter-spacing: 2px;
+  letter-spacing: 2.1px;
 }
 .contact_container .contact_container_left .contact_details .work{
   font-size: 14px;
