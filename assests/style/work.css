@@ -428,7 +428,9 @@ position: fixed;
     font-weight: normal;
     margin-bottom: 20px;
    } 
-   
+   .work_section .right_panel .categories_menu .categories_items .categories_item.collab a{
+     letter-spacing: 0.5px;
+   }
    .work_mobile_container .work_mobile_section{
     /* width: 100%; */
     margin-left: 160px;
