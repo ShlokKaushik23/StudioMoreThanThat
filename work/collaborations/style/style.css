@@ -126,7 +126,6 @@ header{
 .navbar_container .navbar_items .navbar_item:hover .categories_menu{
   display: block;
   text-align: left;
-
 }
 
 .navbar_container .navbar_items .navbar_item:hover .categories_menu .project{
@@ -141,15 +140,17 @@ header{
   height: 100vh;
   margin-top: -10px;
   
-
 }
 .navbar_container .navbar_items .navbar_item .categories_menu .categories_items .categories_item{
    margin-bottom: 16px;
   text-transform: lowercase;
 }
+.navbar_container .navbar_items .navbar_item .categories_menu .categories_items a{
+  font-size: 14px;
+}
 .navbar_container .navbar_items .navbar_item .categories_menu .categories_items .categories_item.discover a{
   text-transform: none;
-
+  
 }
 
 
