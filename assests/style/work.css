@@ -462,6 +462,7 @@ position: fixed;
      color: #DFDFDF;
     
     background-color: #F7F7F7;
+    margin-top: -5px;
    }
    .work_mobile_container .work_mobile_section .work_mobile_description p{
      margin-bottom: 10px;
