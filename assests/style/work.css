@@ -406,7 +406,7 @@ position: fixed;
   }
   
   .work_section .right_panel {
-    width: 128px;
+    width: 140px;
   }
   .work_section .right_panel  {
     height: 100vh;
@@ -415,7 +415,10 @@ position: fixed;
     align-items: center;
     margin-top: 80px;
   }
-
+  
+  .work_section .right_panel .categories_menu .categories_items .categories_item{
+    margin-left: -10px;
+  }
   
   .work_section .right_panel .categories_menu .categories_items .categories_item a{
     color: #fff;
@@ -428,7 +431,7 @@ position: fixed;
    
    .work_mobile_container .work_mobile_section{
     /* width: 100%; */
-    margin-left: 150px;
+    margin-left: 160px;
     margin-bottom:72px;
     margin-right: 20px;
     display: flex;
