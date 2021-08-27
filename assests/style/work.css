@@ -440,6 +440,7 @@ position: fixed;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
   }
 
   .work_mobile_container .work_mobile_section:hover{
@@ -476,4 +477,126 @@ position: fixed;
      color: #000;
      transform: rotateX(180deg);
    }
+
+
+   .work_mobile_container .work_mobile_section .flip-container{
+    border: 2px solid transparent;
+    width: 250px;
+    height: 400px;
+    background-color:transparent;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+/* Flip Inner Container */
+
+.work_mobile_container .work_mobile_section .flip-container .flip-inner-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+/* Add hover to flip horizontal */
+
+.work_mobile_container .work_mobile_section .flip-container:hover .flip-inner-container{
+    transform: rotateY(180deg);
+}
+
+/* position front and back */
+
+.work_mobile_container .work_mobile_section .flip-container .flip-inner-container .flip-front, 
+.work_mobile_container .work_mobile_section .flip-container .flip-inner-container .flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: violet;
+    border-radius: 10px;
+    box-shadow: -1px 2px 13px 0px rgba(0,0,0,0.4);
+}
+
+.work_mobile_container .work_mobile_section .flip-container .flip-inner-container .flip-front{
+    background: #24203b;
+    color: #fff;
+    padding: 20px;
+}
+
+.flip-front .profile-image{
+    background-image: url("profile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #c500d6;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.flip-front h3{
+    margin-top: 5px;
+
+}
+.flip-front h6{
+    font-weight: 200;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.flip-front h5{
+    text-transform:  uppercase;
+    margin: 30px 0 5px 0;
+}
+
+.flip-front .skills{
+    border-top: 1px solid #c500d6;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.flip-front .skills span{
+    background: #fff;
+    color: #c500d6;
+    padding-top: 2px 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+}
+
+
+/* front back  */
+
+.work_mobile_container .work_mobile_section .flip-container .flip-inner-container .flip-back{
+    background: #c500d6;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+
+.work_mobile_container .work_mobile_section .flip-container .flip-inner-container .flip-back h2{
+    margin-top: 100px;
+
+}
+
+.work_mobile_container .work_mobile_section .flip-container .flip-inner-container .flip-back .btn{
+    display: block;
+    padding: 10px 20px;
+    background: #24203b;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.flip-back .btn:hover{
+    background: #c500d6;
+    border: 2px solid #24203b;
+
+}
+
 }
