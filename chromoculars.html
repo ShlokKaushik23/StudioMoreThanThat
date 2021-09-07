@@ -103,13 +103,14 @@
         </div>
         <!-- <div class="toggle" id="toggle"><i class="fas fa-times"></i></div> -->
       </div>
-      <div class="top_white_section"></div>
 
 
     </nav>
 </header>
 
   <main class="work_section">
+    <div class="top_white_section"></div>
+
 
     <div class="left_panel">
     </div>
@@ -119,13 +120,14 @@
 
 
 
+
    <section  class="work_container">
 
     
 
      <div class="work_main_section">
       <div class="template_img">
-        <img src="assests\img\trial.jpg" alt="">
+        <img src="work\images\t1.jpg" alt="">
       </div>
      <div class="work_detail">
       <p class="workline">PERFORMANCES</p>
@@ -198,39 +200,40 @@
       <div class="thumbnail_section">
     
         <div class="thumbnail_img">
+          <img src="work\images\t1.jpg" alt="">
+        </div>
+
+        <div class="thumbnail_img">
+          <img src="work\images\t2.jpg" alt="">
+        </div>
+
+        <div class="thumbnail_img">
+          <img src="work\images\t3.jpg" alt="">
+        </div>
+
+        <div class="thumbnail_img">
+          <img src="work\images\t4.jpg" alt="">
+        </div>
+
+        <div class="thumbnail_img">
+          <img src="work\images\t5.jpg" alt="">
+        </div>
+
+        <div class="thumbnail_img">
+          <img src="work\images\t6.jpg" alt="">
+        </div>
+
+        <div class="thumbnail_img">
+          <img src="work\images\t7.jpg" alt="">
+        </div>
+
+        <div class="thumbnail_img">
+          <img src="work\images\t8.jpg" alt="">
+        </div>
+
+        <div class="thumbnail_img next">
           <img src="assests\thumbnail\thumbnail.png" alt="">
-        </div>
-
-        <div class="thumbnail_img">
-          <img src="assests\thumbnail\thumbnail2.png" alt="">
-        </div>
-
-        <div class="thumbnail_img">
-          <img src="assests\thumbnail\thumbnail.png" alt="">
-        </div>
-
-        <div class="thumbnail_img">
-          <img src="assests\thumbnail\thumbnail2.png" alt="">
-        </div>
-
-        <div class="thumbnail_img">
-          <img src="assests\thumbnail\thumbnail.png" alt="">
-        </div>
-
-        <div class="thumbnail_img">
-          <img src="assests\thumbnail\thumbnail2.png" alt="">
-        </div>
-
-        <div class="thumbnail_img">
-          <img src="assests\thumbnail\thumbnail.png" alt="">
-        </div>
-
-        <div class="thumbnail_img">
-          <img src="assests\thumbnail\thumbnail2.png" alt="">
-        </div>
-
-        <div class="thumbnail_img">
-          <img src="assests\thumbnail\thumbnail.png" alt="">
+          <h1 class="nextimages">+20</h1>
         </div>
     
        
@@ -275,8 +278,8 @@
      </div>
      <div class="portrait">
 
-       <div class="portrait_sec"><img src="assests\img\trial.jpg" alt=""></div>
-       <div class="portrait_sec"><img src="assests\img\trial.jpg" alt=""></div>
+       <div class="portrait_sec"><img src="work\images\t2.jpg" alt=""></div>
+       <div class="portrait_sec"><img src="work\images\t4.jpg" alt=""></div>
 
 
      </div>
@@ -297,7 +300,7 @@
          
          <div class="project_big_section">
           <div class="portrait_big">
-            <img src="assests\img\crop2.jpg" alt=""></div>
+            <img src="work\images\t9.jpg" alt=""></div>
          </div>
          
          
@@ -306,8 +309,8 @@
         
       <div class="portrait">
 
-        <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
-        <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
+        <div class="portrait_sec"><img src="work\images\t6.jpg" alt=""></div>
+        <div class="portrait_sec"><img src="work\images\t7.jpg" alt=""></div>
 
       </div>
     </div>
@@ -329,8 +332,8 @@
       </div>
       <div class="portrait">
 
-        <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
-        <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
+        <div class="portrait_sec"><img src="work\images\t8.jpg" alt=""></div>
+        <div class="portrait_sec"><img src="work\images\t1.jpg" alt=""></div>
 
 
       </div>
@@ -365,7 +368,7 @@
            </div>
 
          </div>
-            <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
+            <div class="portrait_sec"><img src="work\images\t2.jpg" alt=""></div>
         </div>
 
 
@@ -407,7 +410,7 @@
     <div class="work_image_section">
       <div class="portrait">
 
-        <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
+        <div class="portrait_sec"><img src="work\images\t3.jpg" alt=""></div>
 
         <div class="portrait_sec ">
           <div class="work_description">
@@ -428,8 +431,8 @@
 
       <div class="portrait">
 
-        <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
-        <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
+        <div class="portrait_sec"><img src="work\images\t4.jpg" alt=""></div>
+        <div class="portrait_sec"><img src="work\images\t5.jpg" alt=""></div>
 
       </div>
 
@@ -450,7 +453,7 @@
        </div>
      </div>
 
-     <div class="portrait_sec"><img src="assests\img\crop2.jpg" alt=""></div>
+     <div class="portrait_sec"><img src="work\images\t6.jpg" alt=""></div>
 
 
 
@@ -694,6 +697,10 @@
   //     document.getElementById("categories_menu").style.display = "block";
 
   //   });
+
+  var parent = document.getElementsByTagName('main');
+var child = document.getElementsByTagName('section');
+child.style.paddingRight = child.offsetWidth - child.clientWidth + "px";
     </script>
 
 </body>
