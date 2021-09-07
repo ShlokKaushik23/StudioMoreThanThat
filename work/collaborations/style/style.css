@@ -204,7 +204,7 @@ main{
 
 .work_section .top_white_section{
   background: var(--primary_color);
-  margin-top: -25px;
+  margin-top: 111px;
   width: 100%;
   margin-left: 0px;
   height: 24px;
@@ -350,7 +350,7 @@ main{
   /* height: 256px; */
   display: block;
   line-height: 32px; 
-  margin-left: 60px;
+  margin-left: 54px;
   margin-right: 60px;
   margin-top: -24px;
   margin-bottom: 48px;
