@@ -738,7 +738,7 @@ main{
 
 }
 .work_container .testimonial_section .testimonial{
-  font-size: 11px;
+  font-size: 12px;
   position: absolute;
   margin-top: 50px;
   margin-right: -600px;
@@ -1551,7 +1551,7 @@ justify-content: flex-start;
 
 }
 .work_container .testimonial_section .testimonial{
-  font-size: 11px;
+  font-size: 12px;
   position: absolute;
   margin-top: 100px;
   margin-right: -800px;
@@ -1949,7 +1949,9 @@ align-items: center;
  .work_container .work_main_section .work_detail{
    width: 100vw;
    padding: 0 20px;
-   margin-top: 0px
+   margin-top: 0px;
+   margin-bottom: 48px;
+
  }
  
 .work_container .work_main_section .work_detail .workline{
@@ -2480,7 +2482,7 @@ padding: 0 20px;
   }
 
   .work_container .testimonial_section .testimonial{
-  font-size: 11px;
+  font-size: 12px;
   position: absolute;
   margin-top: 270px;
   margin-right: -180px;

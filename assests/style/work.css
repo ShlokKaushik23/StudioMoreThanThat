@@ -744,7 +744,7 @@ position: fixed;
 /* Add hover to flip horizontal */
 
 .work_mobile_container .flip-container:hover .flip-inner-container{
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 /* position front and back */
@@ -790,7 +790,7 @@ position: fixed;
 
  .work_mobile_container .flip-container .flip-inner-container .flip-front .work_mobile_description .invert{
    color: #000;
-   transform: rotateX(180deg);
+   transform: rotateY(180deg);
  }
 
 
@@ -799,7 +799,7 @@ position: fixed;
 .work_mobile_container .flip-container .flip-inner-container .flip-back{
     background: #000;
     opacity: 0.83;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -919,12 +919,12 @@ position: fixed;
   .work_mobile_container .flip-container{
 
     width: 400px;
-    height: 472px;
+    height: calc(472px + 56px);
     background-color:transparent;
     perspective: 1000px;
     margin-left:300px;
     margin-bottom: 56px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     
 }
 
@@ -942,7 +942,7 @@ position: fixed;
 /* Add hover to flip horizontal */
 
 .work_mobile_container .flip-container:hover .flip-inner-container{
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 /* position front and back */
@@ -977,7 +977,8 @@ position: fixed;
    justify-content: center;
    align-items: center;
   width: 100%;
-  height: calc(96px + 72px);
+  /* height: calc(96px + 72px); */
+  height: calc(72px + 56px);
   flex-direction: column;
   font-size: 32px;
    color: #DFDFDF;
@@ -997,7 +998,7 @@ position: fixed;
 .work_mobile_container .flip-container .flip-inner-container .flip-back{
     background: #000;
     opacity: 0.83;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1005,7 +1006,7 @@ position: fixed;
     text-align: center;
     z-index: -10;
     width: 400px;
-    height: calc(472px + 96px);
+    height: calc(472px + 56px);
 
 }
 .work_mobile_container .flip-container .flip-inner-container .flip-back .work_mobile_description .invert{
@@ -1231,7 +1232,7 @@ height: 110vh;
     height: calc(308px + 24px);
     background-color:transparent;
     perspective: 1000px;
-    margin-left:140px;
+    margin-left: 140px;
     margin-bottom: 56px;
     margin-top: 0px;
     
@@ -1251,7 +1252,7 @@ height: 110vh;
 /* Add hover to flip horizontal */
 
 .work_mobile_container .flip-container:hover .flip-inner-container{
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 /* position front and back */
@@ -1307,7 +1308,7 @@ height: 110vh;
 .work_mobile_container .flip-container .flip-inner-container .flip-back{
     background: #000;
     opacity: 0.83;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1358,7 +1359,7 @@ height: 110vh;
 
 }
 
-@media screen and (max-device-width: 360px) {
+@media screen and (max-device-width: 380px) {
 
   .navbar_container .nav_section  {
     width: 60%;
@@ -1393,7 +1394,7 @@ height: 110vh;
 /* Add hover to flip horizontal */
 
 .work_mobile_container .flip-container:hover .flip-inner-container{
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 /* position front and back */
@@ -1449,7 +1450,7 @@ height: 110vh;
 .work_mobile_container .flip-container .flip-inner-container .flip-back{
     background: #000;
     opacity: 0.83;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1523,7 +1524,7 @@ height: 110vh;
 .work_mobile_container .flip-container .flip-inner-container .flip-back{
   background: #000;
   opacity: 0.83;
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
   display: flex;
   justify-content: center;
   flex-direction: column;
