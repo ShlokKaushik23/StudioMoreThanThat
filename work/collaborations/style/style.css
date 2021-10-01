@@ -2464,7 +2464,7 @@ padding: 0 20px;
   align-items: center;
   /* margin-top: -48px; */
   width: 100%;
-  height: calc(50px + 84px + 48px );
+  height: calc(50px + 84px + 48px);
   
 }
 
@@ -2682,4 +2682,34 @@ margin-left: -30px;
   width: 300px;
 
 }
+
+.work_container .gallery_container .gallery .thumbnail_img{
+  width: 60px;
+  height: 60px;
+  display: block;
+ margin: 0;
+ margin: 5px;
+}
+
+.work_container .gallery_container .thumbnail_img.next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.work_container .gallery_container .thumbnail_img.next .nextimages{
+  position: absolute;
+  font-size: 21px;
+  font-family: 'dream_orphansregular';
+  color: #010101;
+}
+
+.work_container .gallery_container .thumbnail_img.next img{
+  opacity: 0.5;
+  
+}
+.work_container .gallery_container .gallery .thumbnail_img.hide{
+  display: none;
+}
+
 }
