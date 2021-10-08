@@ -828,7 +828,7 @@ main{
 .work_container .work_tags_section{
   width: 800px;
   margin-top: 0px;
-  margin-bottom: 250px;
+  /* margin-bottom: 250px; */
   margin-left: -6px;
 }
 .work_container .work_tags_section .work_tag_section{
