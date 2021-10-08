@@ -760,6 +760,9 @@ position: fixed;
     transform: rotateX(180deg);
 }
 
+.do-flip{
+  transform: rotateX(180deg);
+}
 /* position front and back */
 
 .work_mobile_container .flip-front,
@@ -770,6 +773,7 @@ position: fixed;
     backface-visibility: hidden;
 
 }
+
 
 .work_mobile_container .flip-front{
     background: #777777;

@@ -829,13 +829,14 @@ main{
   width: 800px;
   margin-top: 0px;
   margin-bottom: 250px;
+  margin-left: -6px;
 }
 .work_container .work_tags_section .work_tag_section{
   display: flex;
-  flex-wrap: wrap;
-  float: left;
   justify-content: flex-start;
   align-items: flex-start;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
 .work_container .work_tags_section .work_tag_section .tags{
   border: 1px solid #0F996D;
@@ -843,8 +844,10 @@ main{
   font-size: 12px;
   white-space: nowrap;
   border-radius: 12px;
-  margin: 6px auto;
-  color: #0F996D;
+  margin: 6px;
+  color: #0F996D;  
+  width:fit-content;
+
   
 }
 
@@ -2229,13 +2232,12 @@ padding: 0 20px;
 
 
 /* =========== WORK TAGS SECTION =========== */
+
 .work_container .work_tags_section{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100vw;
-  padding: 0 20px;
-  margin-bottom: 0px;
+  /* width: 800px; */
+  margin-top: 0px;
+  margin-bottom: 250px;
+  margin-left: -25px;
 }
 .work_container .work_tags_section .tags{
   font-size: 12px;
