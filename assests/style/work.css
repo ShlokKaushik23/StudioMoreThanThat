@@ -913,7 +913,7 @@ position: fixed;
   }
 
   .work_section .left_panel {
-    width: 300px;
+    width: 2y0px;
   }
 
   .work_section .left_panel .categories_menu .categories_items .categories_item a{
@@ -944,10 +944,10 @@ position: fixed;
   .work_mobile_container .flip-container{
 
     width: 400px;
-    height: calc(472px + 56px);
+    height: calc(400px + 56px);
     background-color:transparent;
     perspective: 1000px;
-    margin-left:300px;
+    margin-left: 290px;
     margin-bottom: 56px;
     /* margin-top: 100px; */
     
@@ -1396,15 +1396,20 @@ height: 110vh;
 }
 
 
-@media screen and (max-device-width: 375px){
+@media screen and (max-device-width: 375px) {
   /* ===== CARD CONTAINER ========== */
+
+  .work_section .left_panel{
+    width: 138px;
+  }
+
   .work_mobile_container .flip-container{
 
    width: calc(200px);
    height: calc(200px + 56px);
    background-color:transparent;
    perspective: 1000px;
-   margin-left:140px;
+   margin-left: 138px;
    margin-bottom: 56px;
    margin-top: 0px;
    
@@ -1631,6 +1636,10 @@ opacity: 1;
 
 
 @media screen and (max-device-width: 320px){
+
+  .work_section .left_panel {
+    width: 133px;
+  }
      /* ===== CARD CONTAINER ========== */
      .work_mobile_container .flip-container{
 
@@ -1638,7 +1647,7 @@ opacity: 1;
       height: calc(150px + 56px);
       background-color:transparent;
       perspective: 1000px;
-      margin-left:140px;
+      margin-left:133px;
       margin-bottom: 56px;
       margin-top: 0px;
       
