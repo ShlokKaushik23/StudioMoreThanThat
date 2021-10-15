@@ -2364,10 +2364,59 @@ padding: 0 20px;
 
 }
 
- 
 
 }
 
+
+@media screen and (max-device-width: 390px){
+
+.work_container .gallery_container .gallery .thumbnail_img{
+  width: 70px;
+  height: 70px;
+  display: block;
+ margin: 4px;
+ padding: 0px;
+
+}
+
+.work_container .testimonial_section .testimonial{
+font-size: 12px;
+position: absolute;
+margin-top: 220px;
+margin-right: -240px;
+color: #69696B;
+opacity: 0.5;
+}
+
+.work_container .gallery_container .thumbnail_img.next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.work_container .gallery_container .thumbnail_img.next .nextimages{
+  position: absolute;
+  font-size: 24px;
+  font-family: 'dream_orphansregular';
+  color: #010101;
+}
+
+.work_container .gallery_container .thumbnail_img.next img{
+  opacity: 0.5;
+  
+}
+.work_container .gallery_container .gallery .thumbnail_img.hide{
+  display: none;
+}
+
+.work_container .other_happening_sections .happenings{
+  font-size: 22px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  margin-left: -40px;
+
+}
+}
 
 @media screen and (max-device-width: 375px) {
 
@@ -2473,106 +2522,7 @@ padding: 0 20px;
 }
 
 
-@media screen and (max-device-width: 360px) {
 
-  /* ======== HEADING SECTION ========== */
-  .work_container .work_main_section .work_detail{
-    width: 100vw;
-    padding: 0 20px;
-    margin-top: 0px
-  }
-  
- 
- .work_container .work_main_section .work_detail .heading{
-   font-size: 30px;
- }
-
-.navbar_container .nav_section  {
-  width: 60%;
-}
-
-.work_container .work_main_section .work_detail .heading{
-  font-size: 32px;
-  width: 300px;
-}
-
-
-.work_container .gallery_container .gallery .thumbnail_img{
-  width: 60px;
-  height: 60px;
-  display: block;
- margin: 0;
- margin: 5px;
-}
-
-.work_container .testimonial_section .testimonial{
-font-size: 12px;
-position: absolute;
-margin-top: 270px;
-margin-right: -180px;
-color: #69696B;
-opacity: 0.5;
-}
-
-.work_container .work_image_section .portrait .portrait_sec .work_description .work_description_center{
-display: flex;
-justify-content: center;
-align-items: center;
-/* margin-top: -48px; */
-width: 100%;
-height: calc(50px + 84px + 48px + 48px + 48px);
-
-}
-
-
-/* ======== TEMPLATE GALLERY IMAGES ============ */
-.work_container .gallery_container .gallery{
-width: 100vw;
-display: grid;
-grid-template-columns: 25% 25% 25% 25%;
-margin: 0;
-place-items: center;
-justify-content: center;
-margin-bottom: 48px;
-padding: 0 20px;
-}
-.work_container .gallery_container .gallery .thumbnail_img{
-width: 71px;
-height: 71px;
-display: block;
-margin: 0;
-margin: 5px;
-}
-.work_container .gallery_container .thumbnail_img.next{
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-}
-.work_container .gallery_container .thumbnail_img.next .nextimages{
-position: absolute;
-font-size: 24px;
-font-family: 'dream_orphansregular';
-color: #010101;
-}
-
-.work_container .gallery_container .thumbnail_img.next img{
-opacity: 0.5;
-
-}
-.work_container .gallery_container .gallery .thumbnail_img.hide{
-display: none;
-}
-
-.work_container .other_happening_sections .happenings{
-font-size: 22px;
-font-weight: bold;
-/* margin-bottom: 20px; */
-margin-left: -30px;
-
-}
-
-}
 
 @media screen and (max-device-width: 360px) {
 
@@ -2602,15 +2552,15 @@ margin-left: -30px;
     width: 60px;
     height: 60px;
     display: block;
-   margin: 0;
+   
    margin: 5px;
   }
 
   .work_container .testimonial_section .testimonial{
   font-size: 12px;
   position: absolute;
-  margin-top: 270px;
-  margin-right: -180px;
+  margin-top: 220px;
+  margin-right: -200px;
   color: #69696B;
   opacity: 0.5;
 }
