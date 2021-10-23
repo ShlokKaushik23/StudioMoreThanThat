@@ -1395,6 +1395,183 @@ height: 110vh;
 }
 }
 
+@media screen and (max-device-width: 428px){
+
+  .work_section .left_panel {
+    width: 133px;
+  }
+     /* ===== CARD CONTAINER ========== */
+     .work_mobile_container .flip-container{
+
+      width: calc(255px);
+      height: calc(255px + 56px);
+      background-color:transparent;
+      perspective: 1000px;
+      margin-left:133px;
+      margin-bottom: 56px;
+      margin-top: 0px;
+      
+  }
+
+  
+.work_mobile_container .flip-front img{
+  width: calc(255px);
+    height: calc(255px);
+   display: block;
+   object-fit: cover;
+   object-position: center;
+}
+
+.work_mobile_container .flip-container .flip-inner-container .flip-back{
+  background: #000;
+  opacity: 0.83;
+  transform: rotateX(180deg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: -10;
+  width: calc(255px);
+  height: calc(255px + 56px);
+}
+
+.work_mobile_container .flip-container .flip-inner-container .flip-back .back_cross i{
+  font-size: 21px;
+  color: #fff;
+  position: absolute;
+   top: 15px;
+   right: 15px;
+ }
+.work_mobile_container .flip-container .flip-inner-container .flip-back .work_mobile_description .invert{
+display: none;
+}
+.work_mobile_container .flip-container .flip-inner-container .flip-back h3{
+color: #fff;
+/* width: 200px; */
+font-size: 21px;
+top: 30px;
+/* left: 20px; */
+position: absolute;
+width: 200px;
+line-height: 16px;
+}
+.work_mobile_container .flip-container .flip-inner-container .flip-back p{
+color: #fff;
+width: 180px;
+font-size: 14px;
+text-align: left;
+/* margin-top: 30px; */
+
+}
+.work_mobile_container .flip-container .flip-inner-container .flip-back a{
+z-index: 100;
+position:absolute;
+bottom: 35px;
+right: 35px;
+width: 58px;
+height: 32px;
+}
+.work_mobile_container .flip-container .flip-inner-container .flip-back a img{
+width: 100%;
+height: 100%;
+opacity: 1;
+}
+
+
+
+}
+
+
+
+@media screen and (max-device-width: 390px) {
+  /* ===== CARD CONTAINER ========== */
+
+  .work_section .left_panel{
+    width: 138px;
+  }
+
+  .work_mobile_container .flip-container{
+
+   width: calc(210px);
+   height: calc(210px + 56px);
+   background-color:transparent;
+   perspective: 1000px;
+   margin-left: 138px;
+   margin-bottom: 56px;
+   margin-top: 0px;
+   
+}
+
+
+.work_mobile_container .flip-front img{
+width: calc(210px);
+ height: calc(210px);
+display: block;
+object-fit: cover;
+object-position: center;
+}
+
+.work_mobile_container .flip-container .flip-inner-container .flip-back{
+background: #000;
+opacity: 0.83;
+transform: rotateX(180deg);
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center;
+z-index: -10;
+width: calc(210px);
+height: calc(210px + 56px);
+
+}
+
+.work_mobile_container .flip-container .flip-inner-container .flip-back .back_cross i{
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+   top: 10px;
+   right: 10px;
+ }
+.work_mobile_container .flip-container .flip-inner-container .flip-back .work_mobile_description .invert{
+display: none;
+}
+.work_mobile_container .flip-container .flip-inner-container .flip-back h3{
+color: #fff;
+/* width: 200px; */
+font-size: 16px;
+top: 20px;
+/* left: 20px; */
+position: absolute;
+width: 150px;
+line-height: 20px;
+}
+.work_mobile_container .flip-container .flip-inner-container .flip-back p{
+color: #fff;
+width: 120px;
+font-size: 10px;
+text-align: left;
+margin-top: 30px;
+
+}
+.work_mobile_container .flip-container .flip-inner-container .flip-back a{
+z-index: 100;
+position:absolute;
+bottom: 20px;
+right: 20px;
+width: 58px;
+height: 32px;
+}
+.work_mobile_container .flip-container .flip-inner-container .flip-back a img{
+width: 100%;
+height: 100%;
+opacity: 1;
+}
+
+
+
+}
 
 @media screen and (max-device-width: 375px) {
   /* ===== CARD CONTAINER ========== */
