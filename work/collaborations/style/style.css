@@ -1449,6 +1449,8 @@ margin-bottom: 48px;
  height: auto;
 }
 .work_container .work_image_section .landscape img{
+ width: 100%;
+ height: auto;
  background-size: cover;
  object-fit: cover;
  object-position: center center;
@@ -2120,6 +2122,8 @@ margin: 5px;
  height: inherit;
 }
 .work_container .work_image_section .landscape img{
+  height: auto;
+  width: 100%;
  background-size: cover;
  object-fit: cover;
  object-position: center center;
