@@ -757,12 +757,10 @@ position: fixed;
 /* Add hover to flip horizontal */
 
 .work_mobile_container .flip-container:hover .flip-inner-container{
-    transform: rotateX(180deg);
+    /* transform: rotateX(180deg); */
 }
 
-.do-flip{
-  transform: rotateX(180deg);
-}
+
 /* position front and back */
 
 .work_mobile_container .flip-front,
@@ -844,7 +842,7 @@ position: fixed;
   /* left: 20px; */
   position: absolute;
   width: 500px;
- 
+  line-height: 40px;
 }
 .work_mobile_container .flip-container .flip-inner-container .flip-back p{
   color: #fff;
@@ -1454,7 +1452,7 @@ top: 30px;
 /* left: 20px; */
 position: absolute;
 width: 200px;
-line-height: 16px;
+line-height: 20px;
 }
 .work_mobile_container .flip-container .flip-inner-container .flip-back p{
 color: #fff;
