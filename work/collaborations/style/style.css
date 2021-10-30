@@ -588,10 +588,7 @@ margin-left: 24px;
  width: 100%;
 
 }
-p{
-  text-align: justify;
-  
-}
+
 .work_container .work_image_section .portrait .portrait_sec span {
  margin-bottom: 20px;
  margin-top: -10px;
@@ -728,10 +725,11 @@ p{
  position: relative;
 
 }
+
 .work_container .testimonial_section .testimonial{
  font-size: 12px;
  position: absolute;
- margin-top: 5%;
+ margin-top: 10%;
  right: 7.5%;
  color: #69696B;
  opacity: 0.5;
@@ -1349,7 +1347,6 @@ justify-content: flex-start;
 .work_container .hooktext{
 width: 100%;
 padding: 0 40px;
-
 margin: 0px;
 margin-bottom: 48px;
 }
