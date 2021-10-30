@@ -2728,6 +2728,9 @@ margin: 5px;
   
   margin: 5px;
  }
+ .work_container .work_main_section .template_categories_container .template_categories_section{
+  font-size: 12px;
+ }
  .work_container .work_main_section .template_categories_container .template_categories_section ul li{
   /* margin: 0 20px; */
   margin-bottom: 6px;
