@@ -295,6 +295,77 @@
         </div>
       
       </section>
+
+
+      <section class="container">
+        <div class="card flipped" id="cardTwo">
+          <div class="side recto">
+            <img src="assests\img\work\invest.png" alt="">
+      
+            <div class="infos">
+              <div class="title">
+                <h3>Invest</h3>
+                <h3 class="invert">Invest</h3>
+              </div>
+      
+            </div>
+            <div class="showmore"></div>
+      
+          </div>
+      
+      
+          <div class="side verso">
+            <h1>Invest</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vero inventore, 
+              ex veniam accusantium pariatur impedit voluptates nostrum praesentium sequi!</p>
+             <a href="work/performances/spoonfed.html"><img src="assests\img\read more button_illustrator.png" alt=""></a>
+             <div class="close">
+              <div class="closebg">
+              <span class="x"></span>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+
+
+
+
+      <section class="container">
+        <div class="card flipped" id="cardThree">
+          <div class="side recto">
+            <img src="assests\img\work\analysis.png" alt="">
+      
+            <div class="infos">
+              <div class="title">
+                <h3>Analysis Guide</h3>
+                <h3 class="invert">Analysis Guide</h3>
+              </div>
+      
+            </div>
+            <div class="showmore"></div>
+      
+          </div>
+      
+      
+          <div class="side verso">
+            <h1>Analysis Guide</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+               Natus facilis dolorum magnam nisi! Sint, tempore ipsa magni
+                illum maiores doloremque autem excepturi?</p>
+             <a href="work/performances/spoonfed.html"><img src="assests\img\read more button_illustrator.png" alt=""></a>
+             <div class="close">
+              <div class="closebg">
+              <span class="x"></span>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
     </section>
   </main>
 
@@ -336,6 +407,26 @@ function rotate() {
 }
   </script>
 
+
+<script>
+  var cardTwo = document.getElementById("cardTwo");
+
+  cardTwo.addEventListener("click", rotate);
+
+function rotate() {
+  cardTwo.classList.toggle("flipped");
+}
+</script>
+
+<script>
+  var cardThree = document.getElementById("cardThree");
+
+  cardThree.addEventListener("click", rotate);
+
+function rotate() {
+  cardThree.classList.toggle("flipped");
+}
+</script>
 
 </body>
 </html>
