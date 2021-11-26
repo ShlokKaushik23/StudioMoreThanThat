@@ -96,16 +96,16 @@
     <div class="left_panel">
       <div class="categories_menu">
         <ul class="categories_items">
-          <li class="categories_item"><a href="work.html">ALL PROJECTS</a></li>
-          <li class="categories_item"><a href="architecture.html" id="architecture">ARCHITECTURE</a></li>
-          <li class="categories_item"><a href="performances.html">PERFORMANCES</a></li>
-          <li class="categories_item"><a href="installations.html">INSTALLATIONS</a></li>
-          <li class="categories_item"><a href="happenings.html">HAPPENINGS</a></li>
-          <li class="categories_item"><a href="conceptual.html">CONCEPTUAL</a></li>
-          <li class="categories_item"><a href="education.html">EDUCATION</a></li>
-          <li class="categories_item"><a href="artworks.html">ARTWORKS</a></li>
-          <li class="categories_item collab"><a class="active" href="collaborations.html">COLLABORATIONS</a></li>
-          <li class="categories_item"><a href="">discover</a></li>
+          <li class="categories_item"><a class="active" href="work.html">ALL PROJECTS</a></li>
+          <li class="categories_item"><a href="comingsoon.html"> <strike>ARCHITECTURE</strike> </a></li>
+          <li class="categories_item"><a href="performances.html"> PERFORMANCES</a></li>
+          <li class="categories_item"><a href="comingsoon.html"><strike>INSTALLATIONS</strike></a></li>
+          <li class="categories_item"><a href="comingsoon.html"><strike>HAPPENINGS</strike></a></li>
+          <li class="categories_item"><a href="comingsoon.html"><strike>CONCEPTUAL</strike></a></li>
+          <li class="categories_item"><a href="comingsoon.html"><strike>EDUCATION</strike></a></li>
+          <li class="categories_item"><a href="comingsoon.html"><strike>ARTWORKS</strike></a></li>
+          <li class="categories_item collab"><a href="collaborations.html">COLLABORATIONS</a></li>
+          <li class="categories_item"><a href=""><strike>discover</strike></a></li>
 
         </ul>
       </div>
@@ -138,44 +138,68 @@
   </section>
 
 
-    <section class="work_mobile_container">
    
+  <section class="work_mobile_container">
+    <section class="container">
+      <div class="card flipped" id="card">
+        <div class="side recto">
+          <img src="assests\img\work\chromculars.jpg" alt="">
     
-
-    <div class="flip-container" >
-      <div class="flip-inner-container" >
-          <div class="flip-front" id="flipback" >
-           
-            <div class="card_img">
-           <img  src="assests\img\work\chromculars.jpg" alt="">
-             
-            </div>
-
-           <div class="work_mobile_description">
-     <p>Chromoculars</p>
-     <p class="invert">Chromoculars</p>
-     </div>
-
-          </div>
-
-          <div class="flip-back" >
+          <div class="infos">
+            <div class="title">
               <h3>Chromoculars</h3>
-              <p>A sensory tool to rest your eyes from the excess of
-                information culture that is surrounding you. Try them for a reconfigured visual experience. </p>
-               <a href="work\collaborations\chromoculars.html"><img src="assests\img\read more button_illustrator.png" alt=""></a>
-
+              <h3 class="invert">Chromoculars</h3>
+            </div>
+    
           </div>
+          <div class="showmore"></div>
+    
+        </div>
+    
+    
+        <div class="side verso">
+          <h1>Chromoculars</h1>
+          <p>A sensory tool to rest your eyes from the excess of information
+             culture that is surrounding you. Try them for a reconfigured 
+             visual experience.</p>
+           <a href="work/collaborations/chromoculars.html"><img src="assests\img\read more button_illustrator.png" alt=""></a>
+          <div class="close">
+            <div class="closebg">
+            <span class="x"></span>
+               
+            </div>
+          </div>
+        </div>
       </div>
-      
-  </div>
-      
-      
+    
     </section>
+
+  </section>
 
   </main>
 
 
   <script type="text/javascript" src="assests\script\script.js"></script>
+
+  <script>
+    // $('.close , .showmore').on('click', function(){
+      
+    // $('.card').toggleClass('flipped');
+    // $('.close').toggleClass('visible');
+    // });
+
+
+    var cards = document.getElementById("card");
+
+    cards.addEventListener("click", rotate);
+
+    function rotate() {
+      cards.classList.toggle("flipped");
+    }
+
+    
+
+  </script>
  
 </body>
 </html>

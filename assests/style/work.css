@@ -816,23 +816,14 @@ position: fixed;
    text-align: center;
  }
  .flipped{
-   -webkit-transform: rotateX(0.5turn);
-           transform: rotateX(0.5turn);
- }
-
- .flippedtwo{
-  -webkit-transform: rotateY(0.5turn);
-          transform: rotateY(0.5turn);
+  -webkit-transform: rotateX(0.5turn);
+          transform: rotateX(0.5turn);
 }
 
-
-
-
- .recto{
-   -webkit-transform: rotateX(0.5turn);
-           transform: rotateX(0.5turn);
- }
- 
+.recto{
+  -webkit-transform: rotateX(0.5turn);
+          transform: rotateX(0.5turn);
+}
  .recto img{
    width: 600px;
    height: 600px;
@@ -887,6 +878,8 @@ position: fixed;
    text-align: center;
    flex-direction: column;
   background-color: #f7f7f7;
+ font-weight: normal;
+
  
  }
  .infos .title{
@@ -987,18 +980,13 @@ position: fixed;
  
   main{
    display: absolute;
-   /* width: 100%; */
    margin: 0;
    overflow: hidden;
   
  }
 
  .navbar_container{
-  /* margin-top: 36px; */
   z-index: 100;
-  
-  /* height: 110.2px; */
-  /* position: unset; */
   margin: 0;
   background-color:#fff;
   height: 200px;
@@ -1321,156 +1309,6 @@ position: fixed;
     
    }
  
-  
-   /* ============== CARD CONTAINER ======== */
-
-   
-
-   .work_mobile_container .flip-container{
-
-    width: 600px;
-    height: 672px;
-    background-color:transparent;
-    perspective: 1000px;
-    margin-left:345px;
-    margin-bottom: 56px;
-    margin-top: 100px;
-    
-}
-
-/* Flip Inner Container */
-
-.work_mobile_container .flip-inner-container{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-}
-
-/* Add hover to flip horizontal */
-
-.work_mobile_container .flip-container:hover .flip-inner-container{
-    transform: rotateX(180deg);
-}
-
-
-/* position front and back */
-
-.work_mobile_container .flip-front,
-.work_mobile_container .flip-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-
-}
-
-
-.work_mobile_container .flip-front{
-    background: #777777;
-    color: #fff;
-    z-index: 10;
-
-    /* padding: 20px; */
-}
-
-.work_mobile_container .flip-front img{
-  width: 600px;
-  height: 508px;
-   display: block;
-}
-
-
-
-.work_mobile_container .flip-container .flip-inner-container .flip-front .work_mobile_description{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  width: 100%;
-  height: calc(96px + 72px);
-  flex-direction: column;
-  font-size: 32px;
-   color: #DFDFDF;
-
-  background-color: #F7F7F7;
-  /* margin-top: -5px; */
- }
-
- .work_mobile_container .flip-container .flip-inner-container .flip-front .work_mobile_description .invert{
-   color: #000;
-   transform: rotateX(180deg);
- }
-
-
-/* front back  */
-
-.work_mobile_container .flip-container .flip-inner-container .flip-back{
-    background: #000;
-    opacity: 0.83;
-    transform: rotateX(180deg);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    z-index: -10;
-    height: 100%;
-}
-
-.work_mobile_container .flip-container .flip-inner-container .flip-back .back_cross i{
- font-size: 32px;
- color: #fff;
- position: absolute;
-  /* top: 20px; */
-  right: 20px;
-}
-.work_mobile_container .flip-container .flip-inner-container .flip-back .work_mobile_description .invert{
-  display: none;
-}
-.work_mobile_container .flip-container .flip-inner-container .flip-back h3{
-  color: #fff;
-  /* width: 200px; */
-  font-size: 36px;
-  /* top: 100px; */
-  /* left: 20px; */
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  display: inline-block
- 
-}
-.work_mobile_container .flip-container .flip-inner-container .flip-back p{
-  color: #fff;
-  /* width: 400px; */
-  padding: 0 20%;
-  display: block;
-  font-size: 28px;
-  text-align: left;
-  /* margin-top: 20px; */
-}
-.work_mobile_container .flip-container .flip-inner-container .flip-back a{
-  z-index: 10;
-  position:absolute;
-  bottom: 80px;
-  right: 100px;
-  width: 136px;
-  height: 84px;
-}
-.work_mobile_container .flip-container .flip-inner-container .flip-back a img{
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-}
-
-
-
-
-
-
-
-
 
    .footer_container{
      margin: 0;
@@ -1569,9 +1407,9 @@ margin-bottom: 120px;
  top:0;bottom:0;left:0;right:0;
 }
 .card{
- -webkit-transform-origin: bottom;
-     -ms-transform-origin: bottom;
-         transform-origin: bottom;
+ -webkit-transform-origin: center;
+     -ms-transform-origin: center;
+         transform-origin: center;
  -webkit-transform-style: preserve-3d;
          transform-style: preserve-3d;
  -webkit-transition: .6s cubic-bezier(.87,-.41,.19,1.44);
@@ -1590,16 +1428,17 @@ margin-bottom: 120px;
          backface-visibility: hidden; /* dont show backface */
  text-align: center;
 }
+
 .flipped{
- -webkit-transform: rotateY(0.5turn);
-         transform: rotateY(0.5turn);
+  -webkit-transform: rotateX(0.5turn);
+          transform: rotateX(0.5turn);
 }
 
 .recto{
- -webkit-transform: rotateY(0.5turn);
-         transform: rotateY(0.5turn);
-
+  -webkit-transform: rotateX(0.5turn);
+          transform: rotateX(0.5turn);
 }
+
 
 .recto img{
  width: 400px;
@@ -1652,6 +1491,8 @@ margin-bottom: 120px;
  flex-direction: column;
  background: #f7f7f7;
   height: calc(56px + 48px);
+ font-weight: normal;
+
 }
 .infos .title{
  display: flex;
@@ -1878,9 +1719,9 @@ margin-bottom: calc(48px + 48px);
  top:0;bottom:0;left:0;right:0;
 }
 .card{
- -webkit-transform-origin: bottom;
-     -ms-transform-origin: bottom;
-         transform-origin: bottom;
+ -webkit-transform-origin: center;
+     -ms-transform-origin: center;
+         transform-origin: center;
  -webkit-transform-style: preserve-3d;
          transform-style: preserve-3d;
  -webkit-transition: .6s cubic-bezier(.87,-.41,.19,1.44);
@@ -1900,17 +1741,14 @@ margin-top: 144px;
  text-align: center;
 }
 .flipped{
- -webkit-transform: rotateY(0.5turn);
-         transform: rotateY(0.5turn);
+  -webkit-transform: rotateX(0.5turn);
+          transform: rotateX(0.5turn);
 }
 
 .recto{
- -webkit-transform: rotateY(0.5turn);
-         transform: rotateY(0.5turn);
- /* background: url('http://boudaoud.samir.free.fr/codepen/nike/front.jpg') no-repeat center center; */
-
+  -webkit-transform: rotateX(0.5turn);
+          transform: rotateX(0.5turn);
 }
-
 .recto img{
  width: 240px;
  height: 240px;
@@ -1997,6 +1835,14 @@ margin-top: 144px;
   .work_section .left_panel{
     width: 138px;
   }
+  .infos{
+ font-weight: normal;
+
+  }
+  .infos .title h3{
+  
+    font-weight: normal;
+   }
 }
 
 @media screen and (max-device-width: 390px) {
@@ -2050,10 +1896,16 @@ margin-top: 144px;
  height: 38px;
  width: 56px;
 }
+.infos{
+ font-weight: normal;
+
+}
 
 .infos .title{
  
  font-size: 21px;
+ font-weight: normal;
+
   letter-spacing: 1px;
 }
 
@@ -2252,7 +2104,12 @@ opacity: 1;
   width: 56px;
  }
  
+ .infos{
+ font-weight: normal;
+
+ }
  .infos .title{
+ font-weight: normal;
   
   font-size: 10px;
    letter-spacing: 1px;

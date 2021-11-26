@@ -229,7 +229,7 @@
 
     <section class="work_mobile_container">
       <section class="container">
-        <div class="card flipped">
+        <div class="card flipped" id="card">
           <div class="side recto">
             <img src="assests\img\work\chromculars.jpg" alt="">
       
@@ -264,7 +264,7 @@
 
 
       <section class="container">
-        <div class="card flipped">
+        <div class="card flipped" id="cardone">
           <div class="side recto">
             <img src="assests\img\work\spoonfed.jpg" alt="">
       
@@ -307,11 +307,33 @@
   <script type="text/javascript" src="assests\script\script.js"></script>
 
   <script>
-    $('.close , .showmore').on('click', function(){
-    $('.card').toggleClass('flipped');
-    $('.close').toggleClass('visible');
-    });
+    // $('.close , .showmore').on('click', function(){
+      
+    // $('.card').toggleClass('flipped');
+    // $('.close').toggleClass('visible');
+    // });
 
+
+    var cards = document.getElementById("card");
+
+    cards.addEventListener("click", rotate);
+
+    function rotate() {
+      cards.classList.toggle("flipped");
+    }
+
+    
+
+  </script>
+
+  <script>
+        var cardone = document.getElementById("cardone");
+
+cardone.addEventListener("click", rotate);
+
+function rotate() {
+  cardone.classList.toggle("flipped");
+}
   </script>
 
 
