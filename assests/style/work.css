@@ -751,7 +751,7 @@ position: fixed;
 }
 /* ============ TABLET SIZE =============== */
 
-@media screen and (max-width: 1024px) and (orientation : portrait){
+@media screen and (max-width: 1024px){
 
   .work_mobile_container{
      position: relative;
