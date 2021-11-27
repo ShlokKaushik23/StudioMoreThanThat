@@ -765,6 +765,8 @@ position: fixed;
    width: 600px;
    height: calc(600px + 48px);
    -webkit-perspective: 1000px;
+   -ms-perspective: 1000px;
+
    margin-left: 950px;
   margin-bottom: 200px;
 
@@ -777,8 +779,12 @@ position: fixed;
  }
  .card{
    -webkit-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+
            transform-style: preserve-3d;
    -webkit-transition: .6s cubic-bezier(.90,-.41,.19,1.44);
+   -ms-transition: .6s cubic-bezier(.90,-.41,.19,1.44);
+
            transition: .6s cubic-bezier(.90,-.41,.19,1.44);
   margin-top: 400px;
    width: 600px;
@@ -796,8 +802,12 @@ position: fixed;
 }
 .cardtwo{
   -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+
           transform-style: preserve-3d;
   -webkit-transition: .6s cubic-bezier(.90,-.41,.19,1.44);
+  -ms-transition: .6s cubic-bezier(.90,-.41,.19,1.44);
+
           transition: .6s cubic-bezier(.90,-.41,.19,1.44);
           
  margin-top: 400px;
@@ -812,16 +822,22 @@ position: fixed;
 
  .side{
    -webkit-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+
            backface-visibility: hidden; /* dont show backface */
    text-align: center;
  }
  .flipped{
   -webkit-transform: rotateX(0.5turn);
+  -ms-transform: rotateX(0.5turn);
+
           transform: rotateX(0.5turn);
 }
 
 .recto{
   -webkit-transform: rotateX(0.5turn);
+  -ms-transform: rotateX(0.5turn);
+
           transform: rotateX(0.5turn);
 }
  .recto img{
@@ -942,6 +958,8 @@ position: fixed;
    z-index: 2;
    position: fixed;
    -webkit-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+
            backface-visibility: hidden;
    right: 0px;
    top: -15px;
@@ -1399,6 +1417,8 @@ position: fixed;
  width: 400px;
  height: calc(400px + 56px + 48px);
  -webkit-perspective: 1000px;
+ -ms-perspective: 1000px;
+
  margin-left: 681px;
 
          perspective: 1000px;
@@ -1415,8 +1435,12 @@ margin-bottom: 120px;
      -ms-transform-origin: center;
          transform-origin: center;
  -webkit-transform-style: preserve-3d;
+ -ms-transform-style: preserve-3d;
+
          transform-style: preserve-3d;
  -webkit-transition: .6s cubic-bezier(.87,-.41,.19,1.44);
+ -ms-transition: .6s cubic-bezier(.87,-.41,.19,1.44);
+
          transition: .6s cubic-bezier(.87,-.41,.19,1.44);
 /* margin-top: 400px; */
  width: 400px;
@@ -1429,17 +1453,23 @@ margin-bottom: 120px;
 }
 .side{
  -webkit-backface-visibility: hidden;
+ -ms-backface-visibility: hidden;
+
          backface-visibility: hidden; /* dont show backface */
  text-align: center;
 }
 
 .flipped{
   -webkit-transform: rotateX(0.5turn);
+  -ms-transform: rotateX(0.5turn);
+
           transform: rotateX(0.5turn);
 }
 
 .recto{
   -webkit-transform: rotateX(0.5turn);
+  -ms-transform: rotateX(0.5turn);
+
           transform: rotateX(0.5turn);
 }
 
@@ -1524,6 +1554,8 @@ margin-bottom: 120px;
  opacity:0;
  display: hidden;
  -webkit-transition: .3s;
+ -ms-transition: .3s;
+
          transition: .3s;
 }
 .showmore{
@@ -1551,6 +1583,8 @@ margin-bottom: 120px;
  z-index: 2;
  position: fixed;
  -webkit-backface-visibility: hidden;
+ -ms-backface-visibility: hidden;
+
          backface-visibility: hidden;
  right: 0px;
  top: -15px;
@@ -1710,6 +1744,8 @@ height: 110vh;
  width: 250px;
  height: calc(250px + 56px + 48px);
  -webkit-perspective: 1000px;
+ -ms-perspective: 1000px;
+  
  margin-left: 400px;
 
          perspective: 1000px;
@@ -1726,8 +1762,12 @@ margin-bottom: calc(48px + 48px);
      -ms-transform-origin: center;
          transform-origin: center;
  -webkit-transform-style: preserve-3d;
+ -ms-transform-style: preserve-3d;
+
          transform-style: preserve-3d;
  -webkit-transition: .6s cubic-bezier(.87,-.41,.19,1.44);
+ -ms-transition: .6s cubic-bezier(.87,-.41,.19,1.44);
+
          transition: .6s cubic-bezier(.87,-.41,.19,1.44);
 margin-top: 144px;
  width: 240px;
@@ -1740,16 +1780,21 @@ margin-top: 144px;
 }
 .side{
  -webkit-backface-visibility: hidden;
+ -ms-backface-visibility: hidden;
+
          backface-visibility: hidden; /* dont show backface */
  text-align: center;
 }
 .flipped{
   -webkit-transform: rotateX(0.5turn);
+  -ms-transform: rotateX(0.5turn);
+
           transform: rotateX(0.5turn);
 }
 
 .recto{
   -webkit-transform: rotateX(0.5turn);
+  -ms-transform: rotateX(0.5turn);
           transform: rotateX(0.5turn);
 }
 .recto img{
