@@ -1287,7 +1287,7 @@ margin-left: 24px;
   
   }
   .right_panel{
-   height: 100vh;
+   height: 120vh;
    width: 120px;
    background: #f3f2ef;
    display: block;
@@ -1480,31 +1480,29 @@ margin-left: 24px;
   
   .work_container .work_infomation{
    display: flex;
-   /* justify-content: center;
-   align-items: center; */
+   justify-content: center;
+   align-items: center; 
+   flex-direction: column;
    margin-bottom: 48px;
    width: 100%;
   }
-  .work_container .work_infomation .work_info{
-   line-height: 24px;
-   font-size: 12px;
-   display: block;
-   margin-left: 10px;
+
+  .work_container .work_infomation .work_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+   }
+   .work_container .work_infomation .work_info p{
+     display: inline-block; 
+     margin-top: 32px;
+    background-color: #f4f4f4;
+     width: 100%;
+     padding: 20px;
+   margin-left: 0;   
+   }
    
-  }
-  .work_container .work_infomation .work_info a{
-    color: #010101;
-  }
-  .work_container .work_infomation .work_info p{
-   display: flex;
-   flex-direction: column;
-   margin-top: -270px;
-   width: 120px;
-  margin-left: 24px;
-  }
-  .work_container .work_infomation .work_info .city{
-   margin-bottom: 20px;
-  }
+
   
   .work_container .work_infomation .work_desc{
    font-size: 18px;
@@ -1705,47 +1703,7 @@ margin-left: 24px;
    display: none;
   }
   
-  /* .work_container .thumbnail_section{
-   width: 800px;
-   display: flex;
-   justify-content: space-around;
-   padding: 0 40px;
-   margin-bottom: 48px;
-  }
-  
-  
-  .work_container .thumbnail_section .thumbnail_img {
-   width: 80px;
-   height: 80px;
-  }
-  
-  .work_container .thumbnail_section .thumbnail_img.next{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-  }
-  .work_container .thumbnail_section .thumbnail_img.next .nextimages{
-   position: absolute;
-   font-size: 24px;
-   font-family: 'dream_orphansregular';
-   color: #010101;
-  }
-  
-  .work_container .thumbnail_section .thumbnail_img.next img{
-   opacity: 0.5;
-   
-  }
-  
-  .work_container .thumbnail_section .thumbnail_img img{
-   width: 100%;
-   height: 100%;
-   background-size: contain;
-   object-fit: cover;
-   object-position: center center;
-  } */
-  
-  
+    
   /* ========================= TESTIMONIAL SECTION ===================== */
   .work_container .testimonial_section{
    display: flex;
@@ -1828,7 +1786,7 @@ margin-left: 24px;
    /* justify-content: space-between; */
    align-items: center;
    /* margin: auto 48px; */
-  
+   
    margin-bottom: 48px;
    width: 1000px;
   }
@@ -2037,6 +1995,50 @@ margin-left: 24px;
    color: #414040;
   
   }
+
+  /* =========== BOTTOM ABOUT SECTION =============== */
+
+.work_container .bottom_about_section{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+ /* width: 100vw; */
+ /* padding: 0 40px; */
+ margin: 0px;
+ margin-left: 0;
+ margin-bottom: 48px;
+ }
+ .work_container .bottom_about_section .about_img{
+  /* width: 100vw; */
+  height: auto;
+ /* padding: 0 40px; */
+ 
+ }
+ .work_container .bottom_about_section .about_img img{
+  width: 100%;
+  height: 100%;
+ }
+ .work_container .bottom_about_section .about{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* padding: 0 40px; */
+ margin-left: 0px;
+ }
+ .work_container .bottom_about_section .about p{
+  display: inline-block; 
+  width: 100%;
+  margin-top: 32px;
+ background-color: #f4f4f4;
+  width: 100%;
+  padding: 20px;
+ /* margin-left: -40px; */
+ 
+ }
   
 }
 
@@ -2766,7 +2768,7 @@ margin-bottom: 20px;
 
 
 /* ==================== MEDIA SCREEN 768px ================= */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)  and (orientation: portrait) {
 
  .navbar_container .nav_section ul li .activemob::before{
    content: '';
@@ -2862,7 +2864,7 @@ margin: 10px;
 
 /* =================== MOBILE MEDIA QUERIES ================= */
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 480px)  and (orientation: portrait) {
  html{
    margin: 0;
  }
